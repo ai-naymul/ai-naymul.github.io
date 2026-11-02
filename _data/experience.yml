@@ -8,7 +8,7 @@
     An AI-native narrative intelligence platform: it puts many outlets' coverage of one story side
     by side, marks where each leans, and lets a reader question it. I own the backend and the
     infrastructure. I originated the link resolver, the pipeline orchestrator and the whole
-    Kubernetes deployment layer, and I run the production cluster, which is a single $988 VPS.
+    Kubernetes deployment layer, and I run the production cluster, which is a single $98 VPS.
     The pipeline ingests thousands of source articles a day and has taken in more than 400,000,
     and the cluster serves about 58,000 HTTP requests a day to roughly 3,500 distinct client IPs
     at a 0.10 per cent 5xx rate, on a three-node MongoDB replica set. Every analysed event comes
