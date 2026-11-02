@@ -24,8 +24,9 @@
 /* answered: name-only-title | the line under the name reads "AI safety researcher and engineer"
    at 18px in the full ink, with where he does it under that. The h1 is his name because the site
    is his name. */
-/* answered: untitled-section | the prose is the continuation of the masthead above it, which is
-   what the rule allows. An About page does not head its own first paragraph. */
+/* waive: untitled-section | at 390px the About page's paragraphs are each tall enough to read as
+   their own section. They are one continuous piece of prose under the masthead, which is the shape
+   he asked for after smanahian.com. Heading each paragraph would break it. */
 
 :root {
   color-scheme: light dark;
