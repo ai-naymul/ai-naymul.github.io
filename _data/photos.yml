@@ -1,5 +1,6 @@
-# His own photographs, cropped square for the small portrait. They crossfade every 6 seconds.
-# Source files: ~/Pictures/PHOTOS_NYM/. Two he asked to leave out are not here.
+# The portrait beside his name. Only the first one is shown; to change it, move another
+# to the top. One a month is the intended pace, not one every few seconds.
+# Source files: ~/Pictures/PHOTOS_NYM/
 - src: /assets/photos/portrait-1.webp
   alt: "An illustrated portrait of Naymul Islam at a riverside ghat"
 - src: /assets/photos/portrait-2.webp

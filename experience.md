@@ -12,7 +12,7 @@ standfirst: "Where I have worked and what I built there. Newest first."
       <span class="entry__role">{{ e.role }}</span>
     </div>
     <div class="entry__main rise parts">
-      <h2 class="entry__title">{{ e.org }}</h2>
+      <h2 class="entry__title">{%- if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}</h2>
       <p class="entry__body">{{ e.what }}</p>
     </div>
   </li>

@@ -17,8 +17,11 @@
 /* waive: 7b-pure-white | --fig-bg is #FFFFFF in his own stylesheet, and the paper figure it
    carries was authored on white. Tinting it would misreport the figure. */
 /* answered: no-footage | no honest clip of this subject exists. */
-/* answered: name-only-title | the line under the name reads "Research lead at BanglaLLM" at 18px,
-   which names the role and the lab. */
+/* answered: name-only-title | the line under the name reads "AI safety researcher and engineer"
+   at 18px in the full ink, with where he does it under that. The h1 is his name because the site
+   is his name. */
+/* answered: untitled-section | the prose is the continuation of the masthead above it, which is
+   what the rule allows. An About page does not head its own first paragraph. */
 
 :root {
   color-scheme: light dark;
@@ -44,7 +47,7 @@
   --mono: ui-monospace, SFMono-Regular, Menlo, monospace; /* taste-skill-ignore: real code only */
 
   --step-small: 0.90625rem;                                  /* 14.5px, his nav and captions */
-  --step-body:  1rem;                                        /* 16px, his body */
+  --step-body:  1.0625rem;                                   /* 17px: his 16px over a 592px column measured 95 characters; see BUILD_LOG */
   --step-lead:  1.0625rem;                                   /* 17px */
   --step-mid:   1.125rem;                                    /* 18px, section heads */
   --step-name:  clamp(1.75rem, 1.3rem + 1.6vw, 2.25rem);     /* 28 to 36px */
@@ -57,10 +60,11 @@
   --s1: 0.5rem;  --s2: 1rem;   --s3: 1.5rem;
   --s4: 2rem;    --s5: 3rem;   --s6: 4rem;  --s7: 5.5rem;
 
-  /* measure — smanahian's column, 592px, which lands at about 72 characters a line.
-     His own 760px wrap measures 95 characters at 16px, outside the readable range. */
-  --page:    37rem;
-  --measure: 37rem;
+  /* measure — 672px at 17px lands at about 74 characters a line, inside the readable
+     range, and leaves less of the window empty than a 592px column does. His own 760px
+     wrap at 16px measures 95 characters, outside it. */
+  --page:    42rem;
+  --measure: 42rem;
 
   /* motion */
   --ease: cubic-bezier(0.2, 0, 0, 1);

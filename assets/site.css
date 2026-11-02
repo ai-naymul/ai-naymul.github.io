@@ -83,28 +83,22 @@ a:active { opacity: 0.72; }
 .mast__name { font-size: var(--step-name); margin-bottom: 2px; }
 .mast__name a { color: var(--ink); text-decoration: none; }
 .mast__name a:hover { color: var(--accent); }
-.mast__line { color: var(--muted); font-size: var(--step-mid); }
+/* his title, then where he does it */
+.mast__line { font-size: var(--step-mid); font-weight: 600; }
+.mast__where { color: var(--muted); font-size: var(--step-small); margin-top: 2px; }
 .mast__links { margin-top: var(--s1); display: flex; flex-wrap: wrap; gap: var(--s1) var(--s3); font-size: var(--step-small); }
 
 .photo {
-  position: relative;
   flex: 0 0 auto;
-  width: 110px; height: 110px;
-  background: var(--panel);
-  overflow: hidden;
-}
-.photo img {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
+  width: 112px; height: 112px;
   object-fit: cover;
-  opacity: 0;
-  transition: opacity 900ms var(--ease);
+  background: var(--panel);
+  display: block;
 }
-.photo img.is-on, .photo img:only-child { opacity: 1; }
 
 /* ——— nav ——— */
 .nav {
-  margin-top: var(--s4);
+  margin-top: var(--s3);
   padding-bottom: var(--s2);
   border-bottom: 1px solid var(--rule); /* taste-skill-ignore: his own header rule, by request */
   display: flex;
@@ -126,7 +120,7 @@ a:active { opacity: 0.72; }
 .themer:hover { color: var(--accent); }
 .themer:active { opacity: 0.72; }
 
-main { display: block; padding-top: var(--s4); }
+main { display: block; padding-top: var(--s3); }
 
 /* ——— prose ——— */
 .prose > * + * { margin-top: var(--s3); }
@@ -137,7 +131,7 @@ main { display: block; padding-top: var(--s4); }
 
 /* ——— inside pages ——— */
 .page-title { font-size: var(--step-title); margin-bottom: var(--s2); }
-.standfirst { color: var(--muted); margin-bottom: var(--s5); }
+.standfirst { color: var(--muted); margin-bottom: var(--s4); }
 
 .ledger > li + li { margin-top: var(--s5); }
 .entry__meta { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s2); align-items: baseline; margin-bottom: 2px; }
@@ -158,6 +152,33 @@ main { display: block; padding-top: var(--s4); }
 
 .rows > li { display: flex; gap: var(--s2); justify-content: space-between; align-items: baseline; padding-block: var(--s1); }
 .rows__when { font-size: var(--step-small); color: var(--muted); white-space: nowrap; }
+
+/* ——— the figures, in the warm panel his own site uses for them ——— */
+.tiles {
+  margin: var(--s5) 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s2);
+}
+.tiles > div {
+  background: var(--panel);
+  padding: var(--s2);
+}
+.tiles--hot { background: var(--warm) !important; }
+.tiles dt {
+  font-size: 1.5rem; font-weight: 700; line-height: 1.1;
+  letter-spacing: -0.02em; font-variant-numeric: tabular-nums;
+}
+.tiles--hot dt { color: var(--hot-ink); }
+.tiles dd { margin: 2px 0 0; font-size: var(--step-small); color: var(--muted); line-height: 1.35; }
+
+/* the venue of the published paper, in the pill his own site uses */
+.badge {
+  background: var(--warm);
+  color: var(--hot-ink) !important;
+  padding: 2px var(--s1);
+  font-weight: 600;
+}
 
 /* ——— a figure from one of his papers ——— */
 .shot { margin: var(--s3) 0 0; }
@@ -219,7 +240,8 @@ main { display: block; padding-top: var(--s4); }
 @media (max-width: 34rem) {
   .shell { padding-block: var(--s4) var(--s3); }
   .mast__top { gap: var(--s2); }
-  .photo { width: 84px; height: 84px; }
+  .photo { width: 88px; height: 88px; }
+  .tiles { grid-template-columns: minmax(0, 1fr); }
   .nav { margin-top: var(--s3); }
   .foot { flex-direction: column; gap: var(--s1); }
 }

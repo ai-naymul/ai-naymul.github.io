@@ -14,31 +14,6 @@
   });
 })();
 
-// rotating photo
-(function () {
-  var box = document.querySelector('[data-photos]');
-  if (!box) return;
-  var shots = box.querySelectorAll('img');
-  if (shots.length < 2) return;
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var i = 0, held = false;
-  box.addEventListener('pointerenter', function () { held = true; });
-  box.addEventListener('pointerleave', function () { held = false; });
-  // the others are not fetched until the page is quiet, so the first view stays small
-  var wake = function () {
-    for (var k = 1; k < shots.length; k++) {
-      if (shots[k].dataset.src) { shots[k].src = shots[k].dataset.src; delete shots[k].dataset.src; }
-    }
-  };
-  setTimeout(wake, 3000);
-  setInterval(function () {
-    if (held || document.hidden) return;
-    shots[i].classList.remove('is-on');
-    i = (i + 1) % shots.length;
-    shots[i].classList.add('is-on');
-  }, 6000);
-})();
-
 // pictures: reveal each one when it has actually decoded
 (function () {
   var imgs = document.querySelectorAll('.shot img, .pipe__img');

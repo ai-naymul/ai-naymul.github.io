@@ -5,7 +5,8 @@
   authors: "Naymul Islam, Nusrat Jahan Lia, Shubhashis Roy Dipta, Sabik Bin Sultan, Abdullah Khan Zehady"
   me: "Naymul Islam"
   note: "First three authors contributed equally."
-  venue: "Findings of the Association for Computational Linguistics: EMNLP 2026"
+  venue: "Published in Findings of EMNLP 2026"
+  badge: true
   year: 2026
   finding: >-
     The same request written as formal journalism is answered 17.5 points more often
@@ -28,7 +29,7 @@
 - title: "BanglaLlama: LLaMA for Bangla Language"
   authors: "Abdullah Khan Zehady, Shubhashis Roy Dipta, Naymul Islam, Safi Al Mamun, Santu Karmaker"
   me: "Naymul Islam"
-  venue: "LoResLM 2026 workshop, EACL 2026"
+  venue: "Published in the LoResLM 2026 workshop at EACL 2026"
   year: 2026
   finding: >-
     Built and ran the evaluation: an eight-category test set and the inference code behind it.
@@ -38,7 +39,7 @@
 - title: "Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles"
   authors: "Nusrat Jahan Lia, Shubhashis Roy Dipta, Abdullah Khan Zehady, Naymul Islam, Madhusodan Chakraborty, Abdullah Al Wasif"
   me: "Naymul Islam"
-  venue: "BLP workshop, IJCNLP-AACL 2025"
+  venue: "Published in the BLP workshop at IJCNLP-AACL 2025"
   year: 2025
   finding: >-
     Sourced the fifty political events behind the dataset and built the news crawlers.

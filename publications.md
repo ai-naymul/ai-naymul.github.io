@@ -9,7 +9,7 @@ standfirst: "Peer-reviewed work on Bengali and low-resource language models. New
   <li class="rise">
     <div class="entry__meta rise">
       <span class="entry__when tabular">{{ p.year }}</span>
-      <span class="entry__role">{{ p.venue }}</span>
+      <span class="entry__role{% if p.badge %} badge{% endif %}">{{ p.venue }}</span>
     </div>
     <div class="entry__main rise parts">
       <h2 class="entry__title">{{ p.title }}</h2>
