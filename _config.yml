@@ -33,6 +33,7 @@ sass:
 
 exclude:
   - README.md
+  - WRITING.md
   - Gemfile
   - Gemfile.lock
   - vendor

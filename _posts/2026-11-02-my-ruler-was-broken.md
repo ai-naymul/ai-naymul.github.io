@@ -2,120 +2,97 @@
 layout: post
 title: "my ruler was broken"
 date: 2026-11-02
-description: "notes to myself on why i feel behind even on good days and what i am doing about it."
+description: "notes to myself on why i feel behind even on good days."
 ---
 
-notes i made for myself. about why i feel behind even on good days. this one changed how i plan a
-week so i am keeping it where i can find it again.
+notes to myself. why i feel behind even on good days.
 
-## the thing
+## the ruler
 
-you finish a piece of work. it is fine. you still feel bad.
+you finish something. it is fine. you still feel bad.
 
-you feel bad because a better version of it exists in your head. that better version is the ruler
-you measure yourself with.
+in your head there is a better version of it. that better version is the ruler you hold yourself
+against.
 
-the ruler is broken. here is why.
+the ruler is bent.
 
-## you already know the answer
+## it was drawn from the future
 
-look back at a hard problem and it looks easy. of course it does. you know how it ended now. the
-you from back then did not.
+look back at a hard problem and it looks easy. you know the ending now. the you from back then did
+not.
 
-so you are grading your old self with a book your old self never had. that is not a fair test.
+the ruler gets drawn after the fact and then held against somebody who was working blind.
 
-## you think you are a machine
+## it was drawn for a machine
 
-you expect to decide to focus and then focus. brains do not work like that. getting into a good
-state is work on its own. you charge yourself nothing for it.
+it assumes you decide to focus and then focus. getting into a good state is work on its own. the
+ruler charges you nothing for it.
 
-## you forget the boring parts
+## it leaves out the boring parts
 
-when you plan you picture the clean version. not the tired version. not the stuck version. not the
-hour you lose to your phone. that hour happens every time.
+the clean version of a day. no tiredness. no being stuck. no hour lost to your phone. that hour
+happens every time and the ruler has no mark for it.
 
-so the plan is already wrong before you start.
+## it does not record the wins
 
-## you skip past the wins
+i did something good last month. it took a normal amount of time. i felt slow the whole way
+through.
 
-i did something good last month. it took a normal amount of time. i still felt slow the whole way
-through. the feeling was lying to me.
+## if i bend it back will i go soft
 
-## but if i go easy will i get lazy
+imagine a button. press it and the guilt goes. you also stop caring about the work. i would not
+press it. so the caring was never made of guilt.
 
-that is the real fear. two tests for it.
+picture a friend standing exactly where you are. you would tell them to ease up and you would be
+right.
 
-one. imagine a button. press it and the guilt is gone. you also stop caring about the work at all.
-would you press it.
+## where the mark should sit
 
-i would not. so the caring is not made of guilt. it is a separate thing. it stays after the guilt
-leaves.
+guilt is a punishment. you learn from punishment slowly. you learn faster when something good
+happens too.
 
-two. picture a friend in your exact spot. what do you tell them. you tell them to go easy on
-themselves. you are right when you say it to them. so you are wrong when you say the opposite to
-yourself.
+put the mark a little above where you normally land. not where a perfect person would land.
 
-## the better ruler
+you will not wake up twice as good tomorrow. people move in small steps. the mark only needs to sit
+one step up.
 
-guilt is a punishment. you can learn from punishment but it is slow. you learn faster when
-something good happens sometimes too.
+clear it often and raise it a little. that is the shape of getting better.
 
-so set the ruler a little above what you normally do. not above what a perfect person would do.
+## some days you come in under
 
-ask yourself this. will i wake up tomorrow twice as good as today. no. nobody does that. people get
-better in small steps. so the ruler only needs to sit a small step above today.
+the line is noisy. expect the noise.
 
-if you keep clearing it that is not a problem with the ruler. that is the point. move it up a bit
-and carry on.
+## how to draw a true one
 
-## bad days are part of it
+not by deciding to. with facts.
 
-some days you fall under the line. that is sad and you can usually learn something from it.
+write down how long things take. in a file. your head lies about this.
 
-it is also normal. the path up is noisy. expect the noise.
+write down a good day. next time you feel slow hold yourself against that real day.
 
-## how to fix the ruler
+ask somebody. you are the most biased person about you.
 
-you cannot fix it by deciding to. you fix it with facts.
+guess a time then bet on it. imagine real money riding on you missing. what number do you say now.
 
-**write down how long things take.** in a file. not in your head. your head lies about this. next
-time use the real number instead of a guess.
+## after a bad morning
 
-**write down a good day.** what did you actually finish on a day that felt great. keep that note.
-next time you feel slow compare yourself to that real day instead of an imaginary one.
+you lose the morning and then raise the mark to make up for it. you miss. then you throw the whole
+day out.
 
-**ask somebody.** you are the most biased person about you. a friend sees it straighter.
+i do this one a lot.
 
-**guess the time then bet on it.** say how long a task will take. now imagine someone bets you a
-lot of money that you will miss it. what number do you say now. that second number is usually the
-true one.
-
-## the trap at the end of a day
-
-you lose the morning. now you feel you have to make it up. so you aim at a bigger day than normal.
-you miss. then you throw the whole day away.
-
-this is the one i fall into most.
-
-the fix is to stop and plan again. you are not in the morning any more. you are here. what does a
-good rest of today look like starting from here.
-
-being good at this is not having no bad days. it is getting back up faster.
+stop and draw the line again from here. you are not in the morning any more.
 
 ## sometimes the ruler is fine
 
-sometimes you are measuring the wrong thing. you keep going to a class you learn nothing in. you
-keep reading a book that got boring four chapters back.
+sometimes it is the thing being measured. a class you learn nothing in. a book that went dull four
+chapters back. the mark is fine. the goal is wrong. drop the goal.
 
-the standard is not the problem there. the goal is. drop the goal instead of trying harder at it.
+## why i keep this
 
-## why i keep this note
+research and building are both slow and both look obvious the moment they work.
 
-i do research and i build things. both are slow. both look obvious the moment they work. so i get
-the hindsight problem every day of the week.
+with a bent ruler every day reads as a failure. nobody keeps walking into that.
 
-if my ruler is wrong then every day reads as a failure. nobody keeps going when every day reads as
-a failure.
-
-so from here i track the time. i ask people. and when a day goes wrong i stop and plan again
-instead of pressing harder.
+so i track time. i ask people. and after a bad morning i draw the line again instead of pressing
+harder.
