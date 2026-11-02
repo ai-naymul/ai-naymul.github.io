@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<div class="column">
+<header class="masthead">
   <h1 class="page-title rise">{{ page.heading | default: page.title }}</h1>
-  {{ content }}
-</div>
+  {%- if page.standfirst %}
+  <p class="standfirst rise">{{ page.standfirst }}</p>
+  {%- endif %}
+</header>
+{{ content }}

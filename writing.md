@@ -2,11 +2,11 @@
 layout: page
 title: Writing
 heading: Writing
+standfirst: "Notes on what I am reading, building and getting wrong. Irregular."
 ---
-<p class="rise">Notes on what I am reading, building and getting wrong. Irregular.</p>
-
+<div class="index rise parts">
 {%- if site.posts.size > 0 %}
-<ul class="rows rise" style="margin-top: var(--s4)">
+<ul class="rows rise">
 {%- for post in site.posts %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -15,5 +15,7 @@ heading: Writing
 {%- endfor %}
 </ul>
 {%- else %}
-<p class="muted rise" style="margin-top: var(--s4)">Nothing here yet.</p>
+<p class="rise">Nothing here yet.</p>
+<p class="rise"><a href="{{ '/feed.xml' | relative_url }}">Subscribe by feed</a></p>
 {%- endif %}
+</div>

@@ -2,65 +2,63 @@
 layout: default
 title: Naymul Islam
 ---
-<h1 class="name column rise">Naymul&nbsp;Islam</h1>
+<header class="hero bleed">
+  <div class="hero__in">
+    <h1 class="name rise">Naymul&nbsp;Islam</h1>
 
-  <div class="about column rise">
-    <div>
-    <dl class="facts">
-      <div><dt>Based in</dt><dd>Chattogram, Bangladesh</dd></div>
-      <div><dt>Working on</dt><dd>Bengali and low-resource NLP</dd></div>
-      <div><dt>With</dt><dd><a href="https://banglallm.github.io/">BanglaLLM</a></dd></div>
-    </dl>
-    {% include photo.html %}
-    </div>
-
-    <div data-register>
-      <p class="lead" data-say="plain">
-        I work on whether language models stay safe in Bengali, and on the data and the
-        evaluation that question needs. Most of what I build sits underneath that: the
-        pipelines, the clusters and the systems research actually runs on.
-      </p>
-      <p class="lead" data-say="formal" hidden>
-        My research concerns the robustness of safety behaviour in large language models
-        under register variation in Bengali, together with the benchmark construction and
-        evaluation methodology such questions require. A substantial part of the work is
-        the underlying systems: data pipelines, orchestration and production infrastructure.
-      </p>
+    <div class="hero__say rise" data-register>
+      <div data-say="plain">
+        <p class="lead">I work on whether language models stay safe in Bengali, and on the
+          data and the evaluation that question needs.</p>
+        <p class="under">Most of what I build sits underneath that: the pipelines, the
+          clusters and the systems research actually runs on.</p>
+      </div>
+      <div data-say="formal" hidden>
+        <p class="lead">My research concerns the robustness of safety behaviour in large
+          language models under register variation in Bengali.</p>
+        <p class="under">A substantial part of the work is the systems underneath: data
+          pipelines, orchestration and production infrastructure.</p>
+      </div>
       <p class="register">
         <button type="button" data-register-toggle hidden>read this in academic register</button>
       </p>
     </div>
+
+    <dl class="facts rise">
+      <div><dt>Based in</dt><dd>Chattogram, Bangladesh</dd></div>
+      <div><dt>Working on</dt><dd>Bengali and low-resource NLP</dd></div>
+      <div><dt>With</dt><dd><a href="https://banglallm.github.io/">BanglaLLM</a></dd></div>
+    </dl>
+
+    {% include register-figure.html %}
   </div>
+</header>
 
-  <section class="band bleed rise" aria-labelledby="finding">
-    <div class="band__in">
-      <h2 class="section__head" id="finding">What the register does</h2>
-      {% include register-figure.html %}
-    </div>
-  </section>
+<section class="work" aria-labelledby="selected">
+  <h2 class="section__head rise" id="selected">Selected</h2>
+  <ul class="ledger-rows">
+    <li class="rise"><span>First author, <a href="{{ '/publications/' | relative_url }}">Findings of EMNLP 2026</a></span><span class="when tabular">2026</span></li>
+    <li class="rise"><span>Founding member and lead engineer, <a href="{{ '/experience/' | relative_url }}">Drishtikon / Perspectivity</a></span><span class="when tabular">2026</span></li>
+    <li class="rise"><span>Best Solo Project, HackFrost winter hackathon</span><span class="when tabular">2024</span></li>
+    <li class="rise"><span>25th of 107 teams, DL Sprint 4.0 speaker diarization, AI@BUET</span><span class="when tabular">2026</span></li>
+    <li class="rise"><span>Top-30 finalist, SciBlitz 2.0 AI hackathon, IEEE CUET</span><span class="when tabular">2026</span></li>
+    <li class="rise"><span>Semi-finalist, ICT Olympiad Bangladesh</span><span class="when tabular">2022</span></li>
+  </ul>
+</section>
 
-  <section class="section column rise offset">
-    <h2 class="section__head">Selected</h2>
-    <div>
-      <ul class="rows">
-        <li><span>First author, <a href="{{ '/publications/' | relative_url }}">Findings of EMNLP 2026</a></span><span class="rows__when tabular">2026</span></li>
-        <li><span>Best Solo Project, HackFrost winter hackathon</span><span class="rows__when tabular">2024</span></li>
-        <li><span>25th of 107 teams, DL Sprint 4.0 speaker diarization, AI@BUET</span><span class="rows__when tabular">2026</span></li>
-        <li><span>Top-30 finalist, SciBlitz 2.0 AI hackathon, IEEE CUET</span><span class="rows__when tabular">2026</span></li>
-        <li><span>Semi-finalist, ICT Olympiad Bangladesh</span><span class="rows__when tabular">2022</span></li>
-      </ul>
+<section class="close" aria-labelledby="reach">
+  <h2 class="visually-hidden" id="reach">Get in touch</h2>
+  <p class="close__say rise">
+    Open to research collaboration on Bengali and low-resource language models, and to
+    engineering work on the systems behind them.
+  </p>
+  {% include photo.html %}
+  <div class="close__side">
+    <div class="close__links rise">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a>
+      <a href="{{ site.scholar_url }}">Google Scholar</a>
     </div>
-  </section>
-
-  <section class="close column rise offset">
-    <div>
-      <p class="close__say">
-        Open to research collaboration on Bengali and low-resource language models, and to
-        engineering work on the systems behind them.
-      </p>
-      <div class="close__links">
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-        <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a>
-      </div>
-    </div>
-  </section>
+  </div>
+  <p class="close__sign rise" aria-hidden="true">Naymul&nbsp;Islam</p>
+</section>

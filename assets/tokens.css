@@ -1,7 +1,13 @@
-/* hallmark v2.0.0 · theme: custom (quiet-instrument, tasteskill seed 678757549) · genre editorial · job: read the work · signature: the register switch · shape: narrow column left of centre · palette: BanglaSafe cream */
+/* Hallmark v2.0.0 · theme: custom (quiet-instrument, tasteskill seed 678757549) · genre editorial · job: read the work · signature: the register figure, drawn from his own leaderboard · shape: inverted hero band, then a ledger · palette: BanglaSafe cream · nav: wordmark, four links, a theme switch · footer: wordmark, the four places he is, the year · hero: the finding on an inverted field */
 /* critique: one column, one ink, one accent; the restraint is the claim. Nothing literal past this block. */
-/* waive: imagery-floor — a researcher's page, the only picture is his own portrait */
-/* waive: motion-floor — four moves, not sixteen; this is not a marketing page */
+/* waive: imagery-floor | no photographs exist yet. The portrait slot is live and waiting for his
+   files; the open collections were searched (Openverse, Wikimedia, the Met, the Art Institute) and
+   what came back was Kolkata street photography by other people, which is stock on a researcher's
+   own page. His brief says professional work only, no decoration. */
+/* waive: no-footage | no honest clip of this subject exists. */
+/* waive: palette-cream | the cream is measured from his own project site,
+   banglallm.github.io/banglasafe, and he chose it. A brand colour outranks the sheet. */
+/* waive: still-page on /writing/ | an index with no entries yet. It resolves on the first post. */
 
 :root {
   color-scheme: light dark;
@@ -14,17 +20,22 @@
   --rule:     #E6E0D6;
   --accent:   #655D51;
   --surface:  #F4F0E8;
+  --band-bg:  #1B1917;
+  --band-ink: #FAF7F1;
+  --band-mid: #ABA396;
   --focus:    #1B1917;
 
   /* type */
   --face: Archivo, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace; /* taste-skill-ignore: real code only */
 
-  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-small: clamp(0.9375rem, 0.92rem + 0.1vw, 1rem);
   --step-body:  clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
   --step-lead:  clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-row:   clamp(1.125rem, 1rem + 0.55vw, 1.5rem);
+  --step-say:   clamp(1.375rem, 1.1rem + 1.15vw, 1.875rem);
   --step-head:  clamp(2.125rem, 1.2rem + 4.6vw, 5.25rem);
-  --step-title: clamp(1.75rem, 1.3rem + 1.9vw, 2.5rem);
+  --step-title: clamp(2.25rem, 1.4rem + 3.6vw, 4.5rem);
 
   --leading-tight: 1.05;
   --leading-text:  1.6;
@@ -54,6 +65,9 @@
   --accent:  #5AA0F0;
   --surface: #171B20;
   --focus:   #5AA0F0;
+  --band-bg:  #EDE8DF;
+  --band-ink: #141210;
+  --band-mid: #5F5848;
 }
 
 /* dark without scripting: the same values, from the system preference */
@@ -67,5 +81,8 @@
   --accent:  #5AA0F0;
   --surface: #171B20;
   --focus:   #5AA0F0;
+  --band-bg:  #EDE8DF;
+  --band-ink: #141210;
+  --band-mid: #5F5848;
 }
 }

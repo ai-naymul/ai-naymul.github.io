@@ -2,23 +2,26 @@
 layout: page
 title: Publications
 heading: Publications
+standfirst: "Peer-reviewed work on Bengali and low-resource language models. Newest first. My name is in bold in each author list."
 ---
-<ul class="ledger rise">
+<ul class="ledger">
 {%- for p in site.data.publications %}
-  <li>
-    <div class="entry__head">
-      <h2 class="entry__title">{{ p.title }}</h2>
+  <li class="rise">
+    <div class="entry__meta rise parts">
       <span class="entry__when tabular">{{ p.year }}</span>
+      <span class="entry__role">{{ p.venue }}</span>
     </div>
-    <p class="entry__role">{{ p.venue }}</p>
-    <p class="entry__body small muted">
-      {{- p.authors | replace: p.me, '<b class="me">§</b>' | replace: '§', p.me -}}
-    </p>
-    {%- if p.note %}<p class="entry__note small muted">{{ p.note }}</p>{% endif %}
-    {%- if p.finding %}<p class="entry__body">{{ p.finding }}</p>{% endif %}
-    <p class="entry__links">
-      {%- for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
-    </p>
+    <div class="entry__main rise parts">
+      <h2 class="entry__title">{{ p.title }}</h2>
+      <p class="entry__body small muted">
+        {{- p.authors | replace: p.me, '<b class="me">§</b>' | replace: '§', p.me -}}
+      </p>
+      {%- if p.note %}<p class="entry__note small muted">{{ p.note }}</p>{% endif %}
+      {%- if p.finding %}<p class="entry__body">{{ p.finding }}</p>{% endif %}
+      <p class="entry__links">
+        {%- for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+      </p>
+    </div>
   </li>
 {%- endfor %}
 </ul>
