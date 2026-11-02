@@ -5,26 +5,31 @@ title: Naymul Islam
 <div class="prose rise parts">
 
 <p>I work on whether language models stay safe when the words change. Safety training is done
-almost entirely in English, and it does not always survive a change of language, register or
-framing. I build the benchmarks that measure that, and the systems that run them.</p>
+almost entirely in English. It does not always survive a change of language, register or framing,
+and almost nothing measures that outside English. I build the benchmarks that do, and the systems
+they run on.</p>
 
-<p>Our <a href="{{ '/publications/' | relative_url }}">EMNLP 2026 Findings paper</a> is the first
-case. We held a harmful request fixed and changed only how it was written: 879 requests, five
-phrasings each, 18 models, 15,822 judged responses. Written as newspaper prose rather than as a
-casual message, the same request is answered <b>17.5 points more often</b>, in 17 of the 18 models.
-The test language is Bengali. The failure is not about Bengali.</p>
+<p>Three papers so far, one as first author. The newest holds a harmful request fixed and changes
+only how it is written: 879 requests, five phrasings each, 18 models, 15,822 judged responses.
+Written as newspaper prose rather than as a casual message, the same request is answered
+<b>17.5 points more often</b>. The test language is Bengali. The failure is not.</p>
 
-<p>The other half of what I do is engineering. I am a founding member and lead engineer at
-<a href="https://perspectivity.co">Perspectivity</a>, an AI-native narrative intelligence platform.
-I built the ingestion and event-clustering pipeline that puts fifty or more outlets' coverage of
-the same story side by side, the orchestration around it and the Kubernetes deployment, and I run
-the production cluster. It is live on the web, with iOS and Android in beta.</p>
+<p>With <a href="https://banglallm.github.io/">BanglaLLM</a>, where I am one of two research leads,
+we have released 224,000 Bangla instruction examples and an open model family from 1B to 13B
+parameters, for a language with roughly 240 million native speakers and almost no evaluation of
+its own.</p>
 
-<p>Before that: an agentic browser at Fellou AI, an autonomous coding agent at
-<a href="{{ '/experience/' | relative_url }}">Menlo Park Lab</a>, and the data and deployment
-layers at AIMarketCap. I write open source too.
-<a href="https://github.com/ai-naymul/BrowserPilot">BrowserPilot</a> lets a language model drive a
-web browser, and I have merged work into
+<p>The other half is engineering. At <a href="https://perspectivity.co">Perspectivity</a> I am a
+founding member and lead engineer. I built the ingestion and event-clustering pipeline that puts
+fifty or more outlets' coverage of one story side by side, the orchestration around it and the
+Kubernetes deployment, and I run the production cluster. It is live on the web, with iOS and
+Android in beta.</p>
+
+<p>Before that: an agentic browser at <a href="https://fellou.ai/">Fellou AI</a>, an autonomous
+coding agent at <a href="https://menloparklab.com/">Menlo Park Lab</a>, speech recognition and
+synthesis models at <a href="https://freedoms.ai/">Freedoms.ai</a>, and the data platform at
+AIMarketCap, where I lead the technical development. I write open source too:
+<a href="https://github.com/ai-naymul/BrowserPilot">BrowserPilot</a>, and merged work in
 <a href="https://github.com/kubeflow-kale/kale">Kubeflow Kale</a>,
 <a href="https://github.com/jina-ai">Jina AI</a>,
 <a href="https://github.com/browser-use/browser-use">browser-use</a> and the
@@ -39,8 +44,10 @@ web browser, and I have merged work into
 </div>
 
 <dl class="tiles rise parts">
-  <div><dt>3</dt><dd>peer-reviewed papers, one as first author</dd></div>
-  <div><dt>15,822</dt><dd>model responses judged in our safety benchmark</dd></div>
-  <div><dt>1B to 13B</dt><dd>parameter models released open for Bangla</dd></div>
+  <div><dt>240M</dt><dd>native Bangla speakers the work is for</dd></div>
+  <div><dt>224,000</dt><dd>instruction examples released open</dd></div>
+  <div><dt>1B to 13B</dt><dd>parameter open model family</dd></div>
+  <div><dt>15,822</dt><dd>responses judged in the safety benchmark</dd></div>
+  <div><dt>28</dt><dd>models evaluated in the bias benchmark</dd></div>
   <div class="tiles--hot"><dt>50k+</dt><dd>followers on the platform I engineer</dd></div>
 </dl>

@@ -1,4 +1,5 @@
 - org: "Perspectivity"
+  logo: { src: "/assets/logos/perspectivity.webp", w: 98, h: 64 }
   url: "https://perspectivity.co"
   role: "Founding member and lead engineer"
   when: "2024 to present"
@@ -10,6 +11,8 @@
     Kubernetes deployment. I run the production cluster.
 
 - org: "Fellou AI (ASI X Inc.)"
+  url: "https://fellou.ai/"
+  logo: { src: "/assets/logos/fellou.webp", w: 64, h: 64 }
   role: "Research and development engineer"
   when: "Aug 2025 to Jan 2026"
   what: >-
@@ -20,13 +23,17 @@
     fallback. Work under confidentiality; described here at the level that allows.
 
 - org: "AIMarketCap"
-  role: "Backend engineer"
+  logo: { src: "/assets/logos/aimarketcap.webp", w: 64, h: 64 }
+  role: "Technical lead"
   when: "2025 to 2026"
   what: >-
-    Built the data-collection and analytics layers, and the Kubernetes deployment the
-    platform ran on.
+    I lead the technical development. The data platform and how much of it the system can
+    take, the analytics layers on top of it, the Kubernetes deployment it runs on, and the
+    interface and product design.
 
 - org: "Flannel.ai"
+  url: "https://flannel.ai/"
+  logo: { src: "/assets/logos/flannel.webp", w: 240, h: 42, wordmark: true }
   role: "Technical lead"
   when: "2026 to present"
   what: >-
@@ -34,12 +41,18 @@
     documents, built under a SOC 2 framework.
 
 - org: "Freedoms.ai"
+  url: "https://freedoms.ai/"
+  logo: { src: "/assets/logos/freedoms.webp", w: 31, h: 64 }
   role: "Engineer"
   when: "2024 to 2025"
   what: >-
-    Backend and AI engineering.
+    Developed and evaluated several open-source speech-to-text and text-to-speech models,
+    and built the evaluations that scored them, at a time when there was very little
+    evaluation work for speech models.
 
 - org: "Menlo Park Lab"
+  url: "https://menloparklab.com/"
+  logo: { src: "/assets/logos/menlopark.svg", w: 32, h: 32 }
   role: "ML research and open-source intern"
   when: "Feb to Jul 2024"
   what: >-
@@ -49,6 +62,7 @@
 
 - org: "BanglaLLM"
   url: "https://banglallm.github.io/"
+  logo: { src: "/assets/logos/banglallm.svg", w: 32, h: 32, mark: true }
   role: "Research lead"
   when: "2024 to present"
   what: >-

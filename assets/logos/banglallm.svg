@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BanglaLLM">
+  <rect x="0" y="2" width="64" height="10.01" fill="currentColor"/>
+  <path transform="translate(7.857 62) scale(0.08942 -0.08942)" fill="currentColor"
+    d="M560 559H475V0H340V1L339 0L37 209V343Q182 461 340 504V559H-20V671H560ZM340 146V371Q237 330 163 274Z"/>
+</svg>
