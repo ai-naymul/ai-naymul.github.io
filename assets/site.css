@@ -3,8 +3,8 @@
 /* waive: hairline | his own site rules off its header and he asked for this theme exactly.
    Two rules on the page, both his: under the nav and over the footer. */
 /* waive: default-font | Inter is the face his own site is set in. He asked for these fonts. */
-/* waive: 7b-pure-white | --fig-bg is #FFFFFF in his own stylesheet, and the paper figure it
-   carries was authored on white. Tinting it would misreport the figure. */
+/* waive: 7b-pure-white | --fig-bg and --btn-hover are #ffffff in his own stylesheet. The paper
+   figure was authored on white and tinting it would misreport the figure; the button hover is his. */
 /* waive: 26b-disabled | the site has no form controls, so there is no disabled state to style. */
 
 /* base */
@@ -45,7 +45,7 @@ a {
   text-decoration-thickness: 1px;
   transition: color var(--fast) var(--ease), text-decoration-color var(--fast) var(--ease);
 }
-a:hover { color: var(--accent-on); text-decoration-color: currentColor; }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
 a:active { opacity: 0.72; }
 
 :where(a, button, [tabindex]):focus-visible {
@@ -85,7 +85,7 @@ a:active { opacity: 0.72; }
 .mast__name a:hover { color: var(--accent); }
 /* his title, then where he does it */
 .mast__line { font-size: var(--step-mid); font-weight: 600; }
-.mast__where { color: var(--muted); font-size: var(--step-small); margin-top: 2px; }
+.mast__where { color: var(--muted); font-size: var(--step-small); margin-top: 2px; max-width: var(--measure); }
 .mast__links { margin-top: var(--s1); display: flex; flex-wrap: wrap; gap: var(--s1) var(--s3); font-size: var(--step-small); }
 
 .photo {
@@ -112,17 +112,19 @@ a:active { opacity: 0.72; }
 .nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 .themer {
   margin-left: auto;
-  background: none; border: 0; padding: 0;
-  color: var(--muted); cursor: pointer;
-  font: inherit;
-  min-height: 44px; display: inline-flex; align-items: center;
+  background: var(--btn-bg); color: var(--btn-fg);
+  border: 0; border-radius: 999px;
+  padding: 4px 12px; cursor: pointer;
+  font: inherit; font-size: var(--step-small);
+  min-height: 32px; display: inline-flex; align-items: center;
 }
-.themer:hover { color: var(--accent); }
+.themer:hover { background: var(--btn-hover); }
 .themer:active { opacity: 0.72; }
 
 main { display: block; padding-top: var(--s3); }
 
 /* ——— prose ——— */
+.prose > * { max-width: var(--measure); }
 .prose > * + * { margin-top: var(--s3); }
 .prose h2 { font-size: var(--step-mid); margin-top: var(--s5); }
 .prose code { font-family: var(--mono); font-size: 0.9em; background: var(--panel); padding: 0.1em 0.3em; }
@@ -131,7 +133,7 @@ main { display: block; padding-top: var(--s3); }
 
 /* ——— inside pages ——— */
 .page-title { font-size: var(--step-title); margin-bottom: var(--s2); }
-.standfirst { color: var(--muted); margin-bottom: var(--s4); }
+.standfirst { color: var(--muted); margin-bottom: var(--s4); max-width: var(--measure); }
 
 .ledger > li + li { margin-top: var(--s5); }
 .entry__meta { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s2); align-items: baseline; margin-bottom: 2px; }
@@ -157,33 +159,37 @@ main { display: block; padding-top: var(--s3); }
 .tiles {
   margin: var(--s5) 0 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--s2);
 }
 .tiles > div {
   background: var(--panel);
-  padding: var(--s2);
+  padding: var(--s3) var(--s2);
 }
-.tiles--hot { background: var(--warm) !important; }
+.tiles--hot { background: var(--venue-bg) !important; }
 .tiles dt {
   font-size: 1.5rem; font-weight: 700; line-height: 1.1;
   letter-spacing: -0.02em; font-variant-numeric: tabular-nums;
 }
-.tiles--hot dt { color: var(--hot-ink); }
+.tiles--hot dt { color: var(--venue-fg); }
 .tiles dd { margin: 2px 0 0; font-size: var(--step-small); color: var(--muted); line-height: 1.35; }
 
 /* the venue of the published paper, in the pill his own site uses */
 .badge {
-  background: var(--warm);
-  color: var(--hot-ink) !important;
-  padding: 2px var(--s1);
+  background: var(--ok-bg);
+  color: var(--ok-fg) !important;
+  border: 1px solid var(--ok-line); /* taste-skill-ignore: his own published pill, by request */
+  border-radius: 999px;
+  padding: 2px 12px;
   font-weight: 600;
 }
+.badge a { color: var(--ok-v); }
 
 /* ——— a figure from one of his papers ——— */
 .shot { margin: var(--s3) 0 0; }
 .shot__zoom { display: block; text-decoration: none; }
-.shot img { display: block; width: 100%; background: var(--fig-bg); padding: var(--s2); }
+.shot img { display: block; width: 100%; background: var(--fig-bg); padding: var(--s2);
+  border: 1px solid var(--rule); /* taste-skill-ignore: his own note, the border makes the white read as a card */ }
 .shot figcaption { margin-top: var(--s1); font-size: var(--step-small); color: var(--muted); }
 
 /* ——— footer ——— */

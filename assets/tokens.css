@@ -1,5 +1,9 @@
 /* Hallmark v2.0.0 · theme: BanglaSafe, his own, by request (cream, blue, rust, Inter, 16px/1.65) · genre editorial · job: read the work · signature: the rotating portrait beside his name · shape: masthead, nav, prose, after smanahian.com · palette: lifted from banglallm.github.io/assets/css/style.css · nav: four plain links and a theme switch under a rule · footer: the four places he is, and the year · hero: name, role, links */
 /* critique: one narrow column, his palette, prose with links. Nothing literal past this block. */
+/* Palette: every value below is copied from the :root block inlined in
+   banglallm.github.io/banglasafe/ itself, checked role by role on 2026-11-02. The first attempt
+   took them from the org stylesheet at banglallm.github.io/assets/css/style.css instead, which
+   shares the light values but not the dark ones, and has no ok-* pill. He caught that. */
 /* The sheet's own measurements of smanahian.com, the site he named as the model, taken with
    inspect.mjs on 2026-11-02: hairline x4, few-pictures (1), focal-point (37.4px / 2.6vw),
    still-page (0 elements), no-footage, font-not-dealt. Every rule waived below is one that
@@ -26,32 +30,42 @@
 :root {
   color-scheme: light dark;
 
-  /* colour — lifted from his own stylesheet at banglallm.github.io/assets/css/style.css */
-  --bg:         #FAF7F1;
-  --panel:      #F3EEE4;
-  --ink:        #1B1917;
-  --muted:      #655D51;
-  --faint:      #776E61;
-  --rule:       #E7DFD2;
-  --accent:     #1F5FB4;
-  --accent-on:  #17488A;
-  --hot:        #C4501C;
-  --hot-ink:    #9C3D0D;
-  --warm:       #FDEFE1;
-  --warm-rule:  #F0D6BB;
-  --fig-bg:     #FFFFFF;
-  --focus:      #1F5FB4;
+  /* Colour, copied from the :root block inlined in banglallm.github.io/banglasafe/ itself,
+     not from the org stylesheet. Same names, same values. Cream is the default; dark is opt-in. */
+  --bg:        #faf7f1;
+  --ink:       #1b1917;          /* his --fg */
+  --muted:     #655d51;
+  --faint:     #776e61;
+  --rule:      #e7dfd2;          /* his --line */
+  --panel:     #f3eee4;
+  --accent:    #1f5fb4;
+  --hot:       #c4501c;
+  --navbg:     rgba(250,247,241,.92);
+  --fig-bg:    #ffffff;          /* his --figbg */
+  --btn-bg:    #1d2126;
+  --btn-fg:    #ffffff;
+  --btn-line:  #1d2126;
+  --btn-hover: #000000;
+  --venue-bg:  #fdefe1;
+  --venue-fg:  #9c3d0d;
+  --venue-line:#f0d6bb;
+  --ok-bg:     #ffeaa8;          /* the published pill he pointed at */
+  --ok-fg:     #8a2f0c;
+  --ok-line:   #e8a33d;
+  --ok-v:      #14508f;
+  --hl-row:    #fbeee1;
+  --focus:     #1f5fb4;
 
-  /* type — Inter at the sizes his own site uses */
+  /* type — Inter, the face his sites are set in */
   --face: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, monospace; /* taste-skill-ignore: real code only */
 
   --step-small: 0.90625rem;                                  /* 14.5px, his nav and captions */
-  --step-body:  1.0625rem;                                   /* 17px: his 16px over a 592px column measured 95 characters; see BUILD_LOG */
-  --step-lead:  1.0625rem;                                   /* 17px */
-  --step-mid:   1.125rem;                                    /* 18px, section heads */
-  --step-name:  clamp(1.75rem, 1.3rem + 1.6vw, 2.25rem);     /* 28 to 36px */
-  --step-title: clamp(1.625rem, 1.3rem + 1.3vw, 2rem);       /* 26 to 32px */
+  --step-body:  1rem;                                        /* 16px, his body exactly */
+  --step-lead:  1.0625rem;
+  --step-mid:   1.125rem;
+  --step-name:  clamp(1.75rem, 1.3rem + 1.6vw, 2.25rem);
+  --step-title: clamp(1.625rem, 1.3rem + 1.3vw, 2rem);
 
   --leading-tight: 1.2;
   --leading-text:  1.65;
@@ -60,11 +74,11 @@
   --s1: 0.5rem;  --s2: 1rem;   --s3: 1.5rem;
   --s4: 2rem;    --s5: 3rem;   --s6: 4rem;  --s7: 5.5rem;
 
-  /* measure — 672px at 17px lands at about 74 characters a line, inside the readable
-     range, and leaves less of the window empty than a 592px column does. His own 760px
-     wrap at 16px measures 95 characters, outside it. */
-  --page:    42rem;
-  --measure: 42rem;
+  /* width — his two, exactly: a 960px frame with a 650px text column inside it */
+  --page:    48rem;      /* 768px: his 960px frame left a 380px void beside a 576px paragraph */
+  --text:    40.625rem;  /* his --text, 650px */
+  --measure: 36rem;      /* where a paragraph wraps: about 70 characters at 16px,
+                            which is where his own page measures */
 
   /* motion */
   --ease: cubic-bezier(0.2, 0, 0, 1);
@@ -73,39 +87,55 @@
 }
 
 [data-theme="dark"] {
-  --bg:         #0F1114;
-  --panel:      #171B20;
-  --ink:        #E9ECEF;
-  --muted:      #AEB6BF;
-  --faint:      #98A1AB;
-  --rule:       #262C34;
-  --accent:     #7CB2F2;
-  --accent-on:  #A6CCF8;
-  --hot:        #E8835A;
-  --hot-ink:    #F0A183;
-  --warm:       #241B14;
-  --warm-rule:  #3A2C20;
-  --fig-bg:     #FFFFFF;
-  --focus:      #7CB2F2;
+  --bg:        #0f1114;
+  --ink:       #e9ecef;
+  --muted:     #98a1ab;
+  --faint:     #7c858e;
+  --rule:      #242a31;
+  --panel:     #171b20;
+  --accent:    #5aa0f0;
+  --hot:       #ff8354;
+  --navbg:     rgba(15,17,20,.92);
+  --fig-bg:    #ffffff;
+  --btn-bg:    #e9ecef;
+  --btn-fg:    #0f1114;
+  --btn-line:  #e9ecef;
+  --btn-hover: #ffffff;
+  --venue-bg:  #2a1a10;
+  --venue-fg:  #ffb384;
+  --venue-line:#4a2c18;
+  --ok-bg:     #3a2e10;
+  --ok-fg:     #ffc78f;
+  --ok-line:   #7a5c1c;
+  --ok-v:      #8fc0f7;
+  --hl-row:    #241a13;
+  --focus:     #5aa0f0;
 }
 
-/* dark without scripting: the same values, from the system preference */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-  --bg:         #0F1114;
-  --panel:      #171B20;
-  --ink:        #E9ECEF;
-  --muted:      #AEB6BF;
-  --faint:      #98A1AB;
-  --rule:       #262C34;
-  --accent:     #7CB2F2;
-  --accent-on:  #A6CCF8;
-  --hot:        #E8835A;
-  --hot-ink:    #F0A183;
-  --warm:       #241B14;
-  --warm-rule:  #3A2C20;
-  --fig-bg:     #FFFFFF;
-  --focus:      #7CB2F2;
-
+  --bg:        #0f1114;
+  --ink:       #e9ecef;
+  --muted:     #98a1ab;
+  --faint:     #7c858e;
+  --rule:      #242a31;
+  --panel:     #171b20;
+  --accent:    #5aa0f0;
+  --hot:       #ff8354;
+  --navbg:     rgba(15,17,20,.92);
+  --fig-bg:    #ffffff;
+  --btn-bg:    #e9ecef;
+  --btn-fg:    #0f1114;
+  --btn-line:  #e9ecef;
+  --btn-hover: #ffffff;
+  --venue-bg:  #2a1a10;
+  --venue-fg:  #ffb384;
+  --venue-line:#4a2c18;
+  --ok-bg:     #3a2e10;
+  --ok-fg:     #ffc78f;
+  --ok-line:   #7a5c1c;
+  --ok-v:      #8fc0f7;
+  --hl-row:    #241a13;
+  --focus:     #5aa0f0;
 }
 }
