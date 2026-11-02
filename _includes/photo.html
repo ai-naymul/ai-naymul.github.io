@@ -1,9 +1,11 @@
 {%- if site.data.photos and site.data.photos.size > 0 -%}
 <div class="photo rise" data-photos>
   {%- for ph in site.data.photos -%}
-  <img src="{{ ph.src | relative_url }}" alt="{{ ph.alt }}" width="420" height="420"
-       class="{% if forloop.first %}is-on{% endif %}"
-       {% unless forloop.first %}loading="lazy"{% endunless %}>
+    {%- if forloop.first -%}
+  <img src="{{ ph.src | relative_url }}" alt="{{ ph.alt }}" width="320" height="320" class="is-on">
+    {%- else -%}
+  <img data-src="{{ ph.src | relative_url }}" alt="{{ ph.alt }}" width="320" height="320" loading="lazy">
+    {%- endif -%}
   {%- endfor -%}
 </div>
 {%- endif -%}

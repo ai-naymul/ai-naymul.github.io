@@ -24,6 +24,13 @@
   var i = 0, held = false;
   box.addEventListener('pointerenter', function () { held = true; });
   box.addEventListener('pointerleave', function () { held = false; });
+  // the others are not fetched until the page is quiet, so the first view stays small
+  var wake = function () {
+    for (var k = 1; k < shots.length; k++) {
+      if (shots[k].dataset.src) { shots[k].src = shots[k].dataset.src; delete shots[k].dataset.src; }
+    }
+  };
+  setTimeout(wake, 3000);
   setInterval(function () {
     if (held || document.hidden) return;
     shots[i].classList.remove('is-on');
