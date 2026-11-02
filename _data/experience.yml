@@ -4,93 +4,99 @@
   also: [{ label: "app.perspectivity.co", url: "https://app.perspectivity.co" }, { label: "drishtikon.life", url: "https://drishtikon.life" }]
   role: "Founding member and lead engineer"
   when: "2024 to present"
-  what: >-
-    An AI-native narrative intelligence platform: it puts many outlets' coverage of one story side
-    by side, marks where each leans, and lets a reader question it. I own the backend and the
-    infrastructure. I originated the link resolver, the pipeline orchestrator and the whole
-    Kubernetes deployment layer, and I run the production cluster, which is a single $98 VPS.
-    The pipeline ingests thousands of source articles a day and has taken in more than 400,000,
-    and the cluster serves about 58,000 HTTP requests a day to roughly 3,500 distinct client IPs
-    at a 0.10 per cent 5xx rate, on a three-node MongoDB replica set. Every analysed event comes
-    out as an 11-section structured object covering source credibility, claim-level fact-checking
-    with three-tier evidence grading, framing bias and context omissions, with controls that
-    require an "Unverified" verdict rather than a guessed one, plus an 11-bucket political
-    taxonomy and a 300-constituency election map. On top of it sits a human-in-the-loop content
-    pipeline with rate caps, an audit trail and auto-publishing to several platforms on nine
-    production cron schedules. It reaches 106,000 YouTube subscribers and 787,000 lifetime video
-    views, 186,000 web users over thirteen months with a 55,000 peak month, and readers in 26
-    countries. Live on the web, with iOS and Android in beta.
+  what: |-
+    <p>A platform that puts many outlets' coverage of one story side by side, marks where each one
+    leans, and lets a reader question it. I own the backend and the infrastructure. The link resolver,
+    the pipeline orchestrator and the Kubernetes deployment layer all started with me, and I run the
+    production cluster. It is <b>a single $98 VPS</b>.</p>
+    <p>The pipeline takes in thousands of articles a day and has ingested <b>more than 400,000</b>. The
+    cluster serves <b>about 58,000 HTTP requests a day</b> to roughly <b>3,500 distinct client IPs</b>,
+    at a 0.10 per cent 5xx rate, on a three-node MongoDB replica set.</p>
+    <p>Every analysed event comes out as an <b>11-section structured object</b>: source credibility,
+    claim-level fact-checking with three-tier evidence grading, framing bias, context omissions. Where
+    the evidence is missing the schema forces an "Unverified" verdict instead of a guess. There is also
+    an 11-bucket political taxonomy and a <b>300-constituency election map</b>.</p>
+    <p>Above that sits a human-in-the-loop content pipeline with rate caps, an audit trail and
+    auto-publishing to several platforms, on nine production cron schedules.</p>
+    <p>It reaches <b>106,000 YouTube subscribers</b> and 787,000 lifetime video views, and
+    <b>186,000 web users</b> over thirteen months, peaking at 55,000 in a single month, with readers in
+    <b>26 countries</b>. Live on the web, with iOS and Android in beta.</p>
 
 - org: "Fellou AI (ASI X Inc.)"
   url: "https://fellou.ai/"
   logo: { src: "/assets/logos/fellou.webp", w: 64, h: 64 }
   role: "Research and development engineer"
   when: "Aug 2025 to Jan 2026"
-  what: >-
-    Sole author of three systems for an agentic browser. The first is a generative-UI proof of
+  what: |-
+    <p>Sole author of three systems for an agentic browser. The first is a generative-UI proof of
     concept: the model emits a validated UI specification that renders into a live, interactive
-    interface rather than a chat reply. Across them, 13 backend services, 4 route groups and 23
-    custom React components, with typed contracts across the boundary. The second runs the desktop browser on a provisioned cloud
-    machine and streams it into a web page, with session lifecycle and authentication
-    fallback. Work under confidentiality; described here at the level that allows.
+    interface instead of a chat reply. The second runs the desktop browser on a provisioned cloud
+    machine and streams it into a web page, with session lifecycle and authentication fallback.</p>
+    <p>Across them, <b>13 backend services</b>, 4 route groups and <b>23 custom React components</b>,
+    with typed contracts across the boundary. Work under confidentiality; described here at the level
+    that allows.</p>
 
 - org: "AIMarketCap"
   logo: { src: "/assets/logos/aimarketcap.webp", w: 64, h: 64 }
   role: "Technical lead"
   when: "2025 to 2026"
-  what: >-
-    Backend lead on a seven-person team, leading four people and reporting to the CEO, across the
-    data platform, how far it scales, the analytics on top of it, and the interface and product
-    design. About 15 external data sources across crypto, equities, AI-tool directories, startup
-    lists, social signals and web traffic. A time-series engine computing rolling metrics across
-    11 timeframes, from 15 minutes to yearly, for roughly 20,000 coins, behind a market-bubble
-    interface. A corpus of about 75,000 AI-tool and product records, aggregated through a
-    six-month campaign against bot detection using undetected browser drivers, CDP mode and proxy
-    rotation. A schema-embedding retrieval system that infers the database schema, embeds each
-    collection into a Milvus vector index, searches it per question, generates an aggregation
-    pipeline and phrases the answer, with three pluggable embedding providers and both Milvus and
-    pgvector behind it. And the platform it all runs on: a self-managed kubeadm cluster with a
-    private registry, 238 Kubernetes manifests and 18 Dockerfiles, including 23 network policies,
-    18 stateful sets, 12 pod disruption budgets and 9 Prometheus service monitors, with Airflow
-    orchestrating the crypto, stock, AI-tool and web-traffic pipelines.
+  what: |-
+    <p>Backend lead on a <b>seven-person team</b>, leading four people and reporting to the CEO. The
+    work covered the data platform, how far it scales, the analytics on top of it, and the interface
+    and product design.</p>
+    <p>About <b>15 external data sources</b> feed it: crypto, equities, AI-tool directories, startup
+    lists, social signals, web traffic. The time-series engine computes rolling metrics across
+    <b>11 timeframes</b>, from 15 minutes to yearly, for roughly <b>20,000 coins</b>, behind a
+    market-bubble interface.</p>
+    <p>The AI-tool corpus runs to <b>about 75,000 records</b>. Collecting it took a six-month campaign
+    against bot detection, with undetected browser drivers, CDP mode and rotating proxies.</p>
+    <p>I also built a schema-embedding retrieval system. It reads the database schema, embeds each
+    collection into a Milvus vector index, searches that index per question, writes an aggregation
+    pipeline and phrases the answer. Three embedding providers are pluggable, with Milvus and pgvector
+    behind it.</p>
+    <p>All of it runs on a self-managed kubeadm cluster with a private registry:
+    <b>238 Kubernetes manifests</b> and 18 Dockerfiles, including 23 network policies, 18 stateful
+    sets, 12 pod disruption budgets and 9 Prometheus service monitors, with Airflow orchestrating the
+    crypto, stock, AI-tool and web-traffic pipelines.</p>
 
 - org: "Flannel.ai"
   url: "https://flannel.ai/"
   logo: { src: "/assets/logos/flannel.webp", w: 240, h: 42, wordmark: true }
   role: "Technical lead"
   when: "2026 to present"
-  what: >-
-    A consumer product for household records: deeds, warranties, vehicle and health
-    documents, built under a SOC 2 framework.
+  what: |-
+    <p>A consumer product for household records: deeds, warranties, vehicle and health documents.
+    Built under a <b>SOC 2</b> framework.</p>
 
 - org: "Freedoms.ai"
   url: "https://freedoms.ai/"
   logo: { src: "/assets/logos/freedoms.webp", w: 31, h: 64 }
   role: "Engineer"
   when: "2024 to 2025"
-  what: >-
-    Built the whole backend for an AI notes and journaling product: retrieval over the user's own
-    notes with LightRAG and Language Agent Tree Search, and self-hosted speech-to-text and
-    text-to-speech infrastructure tuned to the platform rather than called from a managed API. I
-    developed and evaluated several open-source speech models to choose between them, at a time
-    when there was very little evaluation work for speech.
+  what: |-
+    <p>Built the whole backend for an AI notes and journaling product. Retrieval runs over the user's
+    own notes with <b>LightRAG</b> and <b>Language Agent Tree Search</b>. Speech is <b>self-hosted in
+    both directions</b>, tuned to the platform rather than called from a managed API. I developed and
+    evaluated several open-source speech models to choose between them, at a time when there was very
+    little evaluation work for speech.</p>
 
 - org: "Menlo Park Lab"
   url: "https://menloparklab.com/"
   logo: { src: "/assets/logos/menlopark.svg", w: 32, h: 32 }
   role: "ML research and open-source intern"
   when: "Feb to Jul 2024"
-  what: >-
-    Sole engineer on an autonomous coding agent built with LangChain and LangGraph. It
-    planned its own steps, wrote and tested code, and ran shell commands, closing the loop
-    without a person driving each step. The founder adopted it internally.
+  what: |-
+    <p>Sole engineer on an <b>autonomous coding agent</b> built with LangChain and LangGraph. It
+    planned its own steps, wrote and tested code, and ran shell commands, closing the loop without a
+    person driving each step. The founder adopted it internally.</p>
 
 - org: "BanglaLLM"
   url: "https://banglallm.github.io/"
   logo: { src: "/assets/logos/banglallm.svg", w: 32, h: 32, mark: true }
   role: "Research lead"
   when: "2024 to present"
-  what: >-
-    Open research on language models for Bangla. Three published papers, a safety benchmark,
-    224,000 released instruction examples and an open model family from 1B to 13B parameters,
-    plus the data tooling behind them.
+  what: |-
+    <p>Open research on language models for Bangla. <b>Three published papers</b>, a safety benchmark,
+    <b>224,000 released instruction examples</b> and an open model family from <b>1B to 13B
+    parameters</b>, plus the data tooling behind them.</p>
+

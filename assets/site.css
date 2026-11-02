@@ -167,6 +167,8 @@ main { display: block; padding-top: var(--s3); }
 .entry__when  { font-size: var(--step-small); color: var(--ink); font-variant-numeric: tabular-nums; }
 .entry__role  { font-size: var(--step-small); color: var(--muted); }
 .entry__body  { margin-top: var(--s1); }
+.entry__body > p + p { margin-top: var(--s2); }
+.entry__body b, .prose b, .tiles--hot dt { font-weight: 700; }
 .entry__note  { margin-top: 2px; }
 .entry__links { margin-top: var(--s1); font-size: var(--step-small); display: flex; flex-wrap: wrap; gap: var(--s1) var(--s2); }
 

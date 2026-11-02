@@ -18,7 +18,7 @@ standfirst: "Where I have worked and what I built there. Newest first."
     </div>
     <div class="entry__main rise parts">
       <h2 class="entry__title">{%- if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}</h2>
-      <p class="entry__body">{{ e.what }}</p>
+      <div class="entry__body">{{ e.what }}</div>
       {%- if e.also %}
       <p class="entry__links">
         {%- for a in e.also %}<a href="{{ a.url }}">{{ a.label }}</a>{% endfor %}

@@ -10,20 +10,21 @@ and almost nothing measures that outside English. I build the benchmarks that do
 they run on.</p>
 
 <p>Three papers so far, one as first author. The newest holds a harmful request fixed and changes
-only how it is written: 879 requests, five phrasings each, 18 models, 15,822 judged responses.
-Written as newspaper prose rather than as a casual message, the same request is answered
-<b>17.5 points more often</b>. The test language is Bengali. The failure is not.</p>
+only how it is written: <b>879 requests</b>, five phrasings each, <b>18 models</b>,
+<b>15,822 judged responses</b>. Written as newspaper prose rather than as a casual message, the
+same request is answered <b>17.5 points more often</b>. The test language is Bengali. The failure
+is not.</p>
 
 <p>With <a href="https://banglallm.github.io/">BanglaLLM</a>, where I am one of two research leads,
-we have released 224,000 Bangla instruction examples and an open model family from 1B to 13B
-parameters, for a language with roughly 240 million native speakers and almost no evaluation of
-its own.</p>
+we have released <b>224,000 Bangla instruction examples</b> and an open model family from
+<b>1B to 13B parameters</b>. Bangla has roughly <b>240 million native speakers</b> and almost no
+evaluation of its own.</p>
 
 <p>The other half is engineering. At <a href="https://perspectivity.co">Perspectivity</a> I am a
-founding member and lead engineer. I built the ingestion and event-clustering pipeline that puts
-fifty or more outlets' coverage of one story side by side, the orchestration around it and the
-Kubernetes deployment, and I run the production cluster. It is live on the web, with iOS and
-Android in beta.</p>
+founding member and lead engineer. I built the ingestion and event-clustering pipeline, the orchestration
+around it and the Kubernetes deployment, and I run the production cluster. It has ingested
+<b>more than 400,000 source articles</b> and serves <b>about 58,000 requests a day</b>, with
+<b>186,000 web users</b> over thirteen months. Live on the web, with iOS and Android in beta.</p>
 
 <p>Before that: an agentic browser at <a href="https://fellou.ai/">Fellou AI</a>, an autonomous
 coding agent at <a href="https://menloparklab.com/">Menlo Park Lab</a>, speech recognition and

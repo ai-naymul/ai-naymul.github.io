@@ -9,10 +9,11 @@
   badge: true
   year: 2026
   finding: >-
-    879 harmful requests written natively in Bengali rather than translated, sorted into 17
-    harm categories anchored in Bangladeshi law, and asked five ways. Across 18 models and
-    15,822 judged responses, the same request written as newspaper prose is answered 17.5
-    points more often than written as a casual message, in 17 of the 18.
+    <b>879 harmful requests</b> written natively in Bengali rather than translated, sorted into
+    <b>17 harm categories anchored in Bangladeshi law</b>, and asked five ways. Across
+    <b>18 models</b> and <b>15,822 judged responses</b>, the same request written as newspaper
+    prose is answered <b>17.5 points more often</b> than written as a casual message, in 17 of
+    the 18.
   figure:
     src: "/assets/figures/register-effect.webp"
     w: 1280
@@ -34,10 +35,10 @@
   venue: "Published in the LoResLM 2026 workshop at EACL 2026"
   year: 2026
   finding: >-
-    Bangla has around 240 million native speakers and is still treated as low-resource. The
-    paper releases 224,000 translated Bangla instruction examples, Bangla-Orca (172k) and
-    Bangla-Alpaca (52k), and BanglaLlama, an open family of five base and instruct models
-    trained on them.
+    Bangla has around <b>240 million native speakers</b> and is still treated as low-resource.
+    The paper releases <b>224,000 translated Bangla instruction examples</b>, Bangla-Orca (172k)
+    and Bangla-Alpaca (52k), and BanglaLlama, an open family of <b>five base and instruct
+    models</b> trained on them.
   links:
     - { label: "Paper", url: "https://aclanthology.org/2026.loreslm-1.7/" }
 
@@ -47,10 +48,10 @@
   venue: "Published in the BLP workshop at IJCNLP-AACL 2025"
   year: 2025
   finding: >-
-    The first benchmark of 200 politically contested Bangla news articles, each labelled
-    government-leaning, government-critique or neutral by three annotators. Across 28
-    proprietary and open models, F1 reaches 0.83 on government-critique but falls as low as
-    0.00 on neutral, and models over-predict government-leaning stances.
+    The first benchmark of <b>200 politically contested Bangla news articles</b>, each labelled
+    government-leaning, government-critique or neutral by three annotators. Across
+    <b>28 proprietary and open models</b>, F1 reaches <b>0.83</b> on government-critique but falls
+    as low as <b>0.00</b> on neutral, and models over-predict government-leaning stances.
   figure:
     src: "/assets/figures/bangla-bias-f1.webp"
     w: 1400
