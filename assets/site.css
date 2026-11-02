@@ -134,6 +134,7 @@ main { display: block; padding-top: var(--s3); }
 
 /* prose */
 .prose > * { max-width: var(--measure); }
+.aside { color: var(--muted); font-size: var(--step-small); margin-top: var(--s4) !important; }
 .prose > * + * { margin-top: var(--s3); }
 .prose h2 { font-size: var(--step-mid); margin-top: var(--s5); }
 .prose code { font-family: var(--mono); font-size: 0.9em; background: var(--panel); padding: 0.1em 0.3em; }

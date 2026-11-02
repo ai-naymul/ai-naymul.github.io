@@ -42,6 +42,11 @@ AIMarketCap, where I lead the technical development. I write open source too:
 <a href="https://karmake2.github.io/">Santu Karmaker</a> and
 <a href="https://github.com/NusRAT-LiA">Nusrat Jahan Lia</a> at BanglaLLM.</p>
 
+<p class="aside">One small thing, since people assume: the <i>ai</i> in
+<a href="https://github.com/ai-naymul">ai-naymul</a> is not artificial intelligence. It is
+Chittagonian for <i>I am</i>. Every username I actually wanted was taken, and I like the
+dialect.</p>
+
 </div>
 
 <dl class="tiles rise parts">

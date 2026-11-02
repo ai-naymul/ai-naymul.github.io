@@ -59,7 +59,8 @@ standfirst: "Where I have worked and what I built there. Newest first."
   <h2 class="section__head rise">Awards</h2>
   <div class="section__body rise parts">
     <ul class="rows">
-      <li><span><b>Best Solo Project</b>, HackFrost Winter Hackathon, WeMakeDevs. 3,000+
+      <li><span><b>Best Solo Project</b>, <a href="https://archive.wemakedevs.org/hackathons/hackfrost24">HackFrost Winter
+        Hackathon</a>, WeMakeDevs. 3,000+
         participations from 25+ countries; one of seven category awards.</span><span class="rows__when tabular">2024</span></li>
       <li><span><b>25th of 107 teams</b>, DL Sprint 4.0 Bengali speaker diarization,
         AI@BUET.</span><span class="rows__when tabular">2026</span></li>
