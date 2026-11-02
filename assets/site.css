@@ -177,7 +177,8 @@ main { display: block; padding-top: var(--s3); }
 .index > * + * { margin-top: var(--s3); }
 .post__back { margin-top: var(--s5); font-size: var(--step-small); }
 
-.rows > li { display: flex; gap: var(--s2); justify-content: space-between; align-items: baseline; padding-block: var(--s1); }
+.rows > li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--s2); align-items: baseline; padding-block: var(--s1); }
+.rows > li + li { margin-top: var(--s1); }
 .rows__when { font-size: var(--step-small); color: var(--muted); white-space: nowrap; }
 
 /* the figures, in the warm panel his own site uses for them */

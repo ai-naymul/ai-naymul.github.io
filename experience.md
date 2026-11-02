@@ -45,3 +45,28 @@ standfirst: "Where I have worked and what I built there. Newest first."
     </ul>
   </div>
 </section>
+
+<section class="section">
+  <h2 class="section__head rise">Teaching</h2>
+  <div class="section__body rise parts">
+    <p>At INIT 6.0, the national school hackathon at Notre Dame College in Dhaka, I mentored every
+    competing team across two days, more than 200 students, on prompting and on choosing the right
+    AI tool for the problem. One of the teams I advised placed second.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section__head rise">Awards</h2>
+  <div class="section__body rise parts">
+    <ul class="rows">
+      <li><span><b>Best Solo Project</b>, HackFrost Winter Hackathon, WeMakeDevs. 3,000+
+        participations from 25+ countries and 100+ project submissions; one of seven category
+        awards.</span><span class="rows__when tabular">2024</span></li>
+      <li><span><b>25th of 107 teams</b>, DL Sprint 4.0 Bengali speaker diarization,
+        AI@BUET.</span><span class="rows__when tabular">2026</span></li>
+      <li><span><b>30 finalists of 400+ teams</b>, SciBlitz 2.0 AI hackathon, IEEE
+        CUET.</span><span class="rows__when tabular">2026</span></li>
+      <li><span>Semi-finalist, ICT Olympiad Bangladesh.</span><span class="rows__when tabular">2022</span></li>
+    </ul>
+  </div>
+</section>
