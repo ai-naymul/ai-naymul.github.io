@@ -113,13 +113,21 @@ a:active { opacity: 0.72; }
 .nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 .themer {
   margin-left: auto;
-  background: var(--btn-bg); color: var(--btn-fg);
-  border: 0; border-radius: 999px;
-  padding: 4px 12px; cursor: pointer;
-  font: inherit; font-size: var(--step-small);
-  min-height: 32px; display: inline-flex; align-items: center;
+  background: var(--panel); color: var(--ink);
+  border: 1px solid var(--rule); /* taste-skill-ignore: his own theme control, a bordered tile */
+  border-radius: 10px;
+  width: 36px; height: 36px; padding: 0; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
 }
-.themer:hover { background: var(--btn-hover); }
+.themer:hover { border-color: var(--accent); color: var(--accent); }
+.themer__i { display: none; }
+.themer__moon { display: block; }
+[data-theme="dark"] .themer__moon { display: none; }
+[data-theme="dark"] .themer__sun { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .themer__moon { display: none; }
+  :root:not([data-theme="light"]) .themer__sun { display: block; }
+}
 .themer:active { opacity: 0.72; }
 
 main { display: block; padding-top: var(--s3); }

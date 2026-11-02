@@ -19,6 +19,11 @@ standfirst: "Where I have worked and what I built there. Newest first."
     <div class="entry__main rise parts">
       <h2 class="entry__title">{%- if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}</h2>
       <p class="entry__body">{{ e.what }}</p>
+      {%- if e.also %}
+      <p class="entry__links">
+        {%- for a in e.also %}<a href="{{ a.url }}">{{ a.label }}</a>{% endfor %}
+      </p>
+      {%- endif %}
     </div>
   </li>
 {%- endfor %}
@@ -27,9 +32,10 @@ standfirst: "Where I have worked and what I built there. Newest first."
 <section class="section">
   <h2 class="section__head rise">Open source</h2>
   <div class="section__body rise parts">
-    <p>BrowserPilot, a tool that lets a language model drive a web browser, and merged
-    contributions to Kubeflow Kale, Jina AI, browser-use and the CNCF Cloud Native Glossary,
-    where the first thing I contributed was the Bengali translation.</p>
+    <p>BrowserPilot lets a language model drive a web browser; it carries a 256-test suite that
+    runs in CI on every pull request. Merged contributions to Kubeflow Kale, Jina AI, browser-use
+    and the CNCF Cloud Native Glossary, where the first thing I contributed was the Bengali
+    translation.</p>
     <ul class="oss">
       <li><a href="https://github.com/ai-naymul/BrowserPilot">BrowserPilot</a></li>
       <li><img class="oss__logo" src="{{ '/assets/logos/kubeflow-kale.webp' | relative_url }}" alt="" width="46" height="64" loading="lazy"><a href="https://github.com/kubeflow-kale/kale">Kubeflow Kale</a></li>
