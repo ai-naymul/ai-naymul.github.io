@@ -2,12 +2,8 @@
 layout: default
 ---
 <article>
-  <header class="masthead">
-    <h1 class="page-title rise">{{ page.title }}</h1>
-    <p class="standfirst rise tabular muted">{{ page.date | date: "%-d %B %Y" }}</p>
-  </header>
-  <div class="post">
-    <div class="prose rise parts">{{ content }}</div>
-    <p class="post__back"><a href="{{ '/writing/' | relative_url }}">All notes</a></p>
-  </div>
+  <h1 class="page-title rise">{{ page.title }}</h1>
+  <p class="standfirst rise tabular muted">{{ page.date | date: "%-d %B %Y" }}</p>
+  <div class="prose rise parts">{{ content }}</div>
+  <p class="post__back"><a href="{{ '/writing/' | relative_url }}">All notes</a></p>
 </article>

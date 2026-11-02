@@ -1,6 +1,5 @@
-<nav class="nav" aria-label="Sections">
-  <a class="nav__home" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-  {%- assign pages = "about,/|publications,/publications/|experience,/experience/|writing,/writing/" | split: "|" -%}
+<nav class="nav rise" aria-label="Sections">
+  {%- assign pages = "About,/|Experience,/experience/|Publications,/publications/|Writing,/writing/" | split: "|" -%}
   {%- for p in pages -%}
     {%- assign bits = p | split: "," -%}
     {%- assign label = bits[0] -%}
@@ -11,5 +10,5 @@
       <a href="{{ href | relative_url }}">{{ label }}</a>
     {%- endif -%}
   {%- endfor -%}
-  <button class="themer" type="button" data-themer aria-label="Switch to dark theme" aria-pressed="false">theme</button>
+  <button class="themer" type="button" data-themer aria-label="Switch to dark theme" aria-pressed="false">Theme</button>
 </nav>

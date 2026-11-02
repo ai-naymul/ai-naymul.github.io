@@ -1,4 +1,8 @@
-# Replace these with real photographs. Any number; they crossfade every 6s.
-# Square images, 300x300 or larger. Keep alt text truthful.
-- src: /assets/photos/placeholder.svg
-  alt: "Placeholder, to be replaced with a photograph of Naymul Islam"
+# His own photographs, cropped square for the small portrait. They crossfade every 6 seconds.
+# Source files: ~/Pictures/PHOTOS_NYM/. Two he asked to leave out are not here.
+- src: /assets/photos/portrait-1.webp
+  alt: "An illustrated portrait of Naymul Islam at a riverside ghat"
+- src: /assets/photos/portrait-2.webp
+  alt: "Naymul Islam outdoors, wearing glasses and a hooded top"
+- src: /assets/photos/portrait-3.webp
+  alt: "Naymul Islam outdoors in sunglasses, hills behind him"

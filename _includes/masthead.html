@@ -1,0 +1,20 @@
+<header class="mast">
+  <div class="mast__top">
+    {% include photo.html %}
+    <div class="mast__who rise parts">
+      {%- if page.url == "/" %}
+      <h1 class="mast__name">Naymul Islam</h1>
+      {%- else %}
+      <p class="mast__name"><a href="{{ '/' | relative_url }}">Naymul Islam</a></p>
+      {%- endif %}
+      <p class="mast__line">Research lead at <a href="https://banglallm.github.io/">BanglaLLM</a></p>
+      <p class="mast__links">
+        <a href="{{ site.scholar_url }}">Google Scholar</a>
+        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+        <a href="https://huggingface.co/{{ site.hf_username }}">Hugging Face</a>
+        <a href="mailto:{{ site.email }}">Email</a>
+      </p>
+    </div>
+  </div>
+  {% include nav.html %}
+</header>

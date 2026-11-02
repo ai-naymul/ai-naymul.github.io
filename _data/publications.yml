@@ -10,6 +10,12 @@
   finding: >-
     The same request written as formal journalism is answered 17.5 points more often
     than the same request written as a casual message, in 17 of 18 models tested.
+  figure:
+    src: "/assets/figures/register-effect.webp"
+    w: 1280
+    h: 684
+    alt: "Bar chart of attack success rate in five prompting conditions. Bengali journalism is highest at 63.3 per cent, 17.5 points above Banglish peer-help at 45.8 per cent."
+    cap: "The same harmful request, written five ways. Figure from the paper."
   links:
     - { label: "Paper", url: "https://aclanthology.org/2026.findings-emnlp.1403/" }
     - { label: "arXiv", url: "https://arxiv.org/abs/2608.22335" }

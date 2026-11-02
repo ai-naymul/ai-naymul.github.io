@@ -32,21 +32,16 @@
   }, 6000);
 })();
 
-// register switch
+// pictures: reveal each one when it has actually decoded
 (function () {
-  var box = document.querySelector('[data-register]');
-  if (!box) return;
-  var says = box.querySelectorAll('[data-say]');
-  var btn = box.querySelector('[data-register-toggle]');
-  if (!btn || says.length < 2) return;
-  btn.hidden = false;
-  var on = 0;
-  btn.addEventListener('click', function () {
-    says[on].hidden = true;
-    on = (on + 1) % says.length;
-    says[on].hidden = false;
-    btn.textContent = 'read this ' + (says[on].dataset.say === 'plain' ? 'in academic register' : 'in plain words');
-  });
+  var imgs = document.querySelectorAll('.shot img, .pipe__img');
+  for (var i = 0; i < imgs.length; i++) {
+    (function (im) {
+      if (im.complete) { im.classList.add('is-ready'); return; }
+      im.addEventListener('load', function () { im.classList.add('is-ready'); });
+      im.addEventListener('error', function () { im.classList.add('is-ready'); });
+    })(imgs[i]);
+  }
 })();
 
 // entrances

@@ -7,7 +7,7 @@ standfirst: "Peer-reviewed work on Bengali and low-resource language models. New
 <ul class="ledger">
 {%- for p in site.data.publications %}
   <li class="rise">
-    <div class="entry__meta rise parts">
+    <div class="entry__meta rise">
       <span class="entry__when tabular">{{ p.year }}</span>
       <span class="entry__role">{{ p.venue }}</span>
     </div>
@@ -21,6 +21,16 @@ standfirst: "Peer-reviewed work on Bengali and low-resource language models. New
       <p class="entry__links">
         {%- for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
       </p>
+      {%- if p.figure %}
+      <figure class="shot">
+        <a class="shot__zoom" href="{{ p.figure.src | relative_url }}">
+          <img src="{{ p.figure.src | relative_url }}" alt="{{ p.figure.alt }}"
+               width="{{ p.figure.w }}" height="{{ p.figure.h }}" loading="lazy" decoding="async">
+        </a>
+        <figcaption>{{ p.figure.cap }}
+          <a href="{{ p.figure.src | relative_url }}">Open it full size</a></figcaption>
+      </figure>
+      {%- endif %}
     </div>
   </li>
 {%- endfor %}

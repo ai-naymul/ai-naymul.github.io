@@ -7,7 +7,7 @@ standfirst: "Where I have worked and what I built there. Newest first."
 <ul class="ledger">
 {%- for e in site.data.experience %}
   <li class="rise">
-    <div class="entry__meta rise parts">
+    <div class="entry__meta rise">
       <span class="entry__when tabular">{{ e.when }}</span>
       <span class="entry__role">{{ e.role }}</span>
     </div>

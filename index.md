@@ -2,63 +2,40 @@
 layout: default
 title: Naymul Islam
 ---
-<header class="hero bleed">
-  <div class="hero__in">
-    <h1 class="name rise">Naymul&nbsp;Islam</h1>
+<div class="prose rise parts">
 
-    <div class="hero__say rise" data-register>
-      <div data-say="plain">
-        <p class="lead">I work on whether language models stay safe in Bengali, and on the
-          data and the evaluation that question needs.</p>
-        <p class="under">Most of what I build sits underneath that: the pipelines, the
-          clusters and the systems research actually runs on.</p>
-      </div>
-      <div data-say="formal" hidden>
-        <p class="lead">My research concerns the robustness of safety behaviour in large
-          language models under register variation in Bengali.</p>
-        <p class="under">A substantial part of the work is the systems underneath: data
-          pipelines, orchestration and production infrastructure.</p>
-      </div>
-      <p class="register">
-        <button type="button" data-register-toggle hidden>read this in academic register</button>
-      </p>
-    </div>
+<p>I work on language model safety and alignment: whether safety training survives a change of
+language or register, what a model is doing inside when it does not, and the evaluation needed
+to tell.</p>
 
-    <dl class="facts rise">
-      <div><dt>Based in</dt><dd>Chattogram, Bangladesh</dd></div>
-      <div><dt>Working on</dt><dd>Bengali and low-resource NLP</dd></div>
-      <div><dt>With</dt><dd><a href="https://banglallm.github.io/">BanglaLLM</a></dd></div>
-    </dl>
+<p>I am a research lead at <a href="https://banglallm.github.io/">BanglaLLM</a>, an independent
+group working on Bangla language models, the data they learn from and the tests that check them.
+Our <a href="{{ '/publications/' | relative_url }}">EMNLP 2026 Findings paper</a> holds a harmful
+request fixed and changes only how it is written. Asked as newspaper Bengali it is answered 17.5
+points more often than asked as a casual message, in 17 of the 18 models we tested.</p>
 
-    {% include register-figure.html %}
-  </div>
-</header>
+<p>What I want to know next is what changes inside the model when that happens, rather than only
+what comes out of it. That is where most of my reading goes at the moment: interpretability, and
+the training and post-training decisions that put the behaviour there in the first place.</p>
 
-<section class="work" aria-labelledby="selected">
-  <h2 class="section__head rise" id="selected">Selected</h2>
-  <ul class="ledger-rows">
-    <li class="rise"><span>First author, <a href="{{ '/publications/' | relative_url }}">Findings of EMNLP 2026</a></span><span class="when tabular">2026</span></li>
-    <li class="rise"><span>Founding member and lead engineer, <a href="{{ '/experience/' | relative_url }}">Drishtikon / Perspectivity</a></span><span class="when tabular">2026</span></li>
-    <li class="rise"><span>Best Solo Project, HackFrost winter hackathon</span><span class="when tabular">2024</span></li>
-    <li class="rise"><span>25th of 107 teams, DL Sprint 4.0 speaker diarization, AI@BUET</span><span class="when tabular">2026</span></li>
-    <li class="rise"><span>Top-30 finalist, SciBlitz 2.0 AI hackathon, IEEE CUET</span><span class="when tabular">2026</span></li>
-    <li class="rise"><span>Semi-finalist, ICT Olympiad Bangladesh</span><span class="when tabular">2022</span></li>
-  </ul>
-</section>
+<p>Most of what I build sits underneath the research. I am a founding member and lead engineer at
+<a href="{{ '/experience/' | relative_url }}">Drishtikon / Perspectivity</a>, where I built the
+ingestion and event-clustering pipeline, the orchestration around it and the Kubernetes deployment,
+and where I run the production cluster. Before that I worked on an agentic browser at Fellou AI and
+an autonomous coding agent at Menlo Park Lab.</p>
 
-<section class="close" aria-labelledby="reach">
-  <h2 class="visually-hidden" id="reach">Get in touch</h2>
-  <p class="close__say rise">
-    Open to research collaboration on Bengali and low-resource language models, and to
-    engineering work on the systems behind them.
-  </p>
-  {% include photo.html %}
-  <div class="close__side">
-    <div class="close__links rise">
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-      <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a>
-      <a href="{{ site.scholar_url }}">Google Scholar</a>
-    </div>
-  </div>
-  <p class="close__sign rise" aria-hidden="true">Naymul&nbsp;Islam</p>
-</section>
+<p>The research is not mine alone. I work with
+<a href="https://github.com/brishtiteveja">Abdullah Khan Zehady</a>,
+<a href="https://roydipta.com/">Shubhashis Roy Dipta</a>,
+<a href="https://karmake2.github.io/">Santu Karmaker</a> and
+<a href="https://github.com/NusRAT-LiA">Nusrat Jahan Lia</a>, among others at BanglaLLM.</p>
+
+<p>I also write open source. <a href="https://github.com/ai-naymul/BrowserPilot">BrowserPilot</a>
+lets a language model drive a web browser, and I have merged work into
+<a href="https://github.com/kubeflow-kale/kale">Kubeflow Kale</a>,
+<a href="https://github.com/jina-ai">Jina AI</a>,
+<a href="https://github.com/browser-use/browser-use">browser-use</a> and the
+<a href="https://github.com/cncf/glossary">CNCF Cloud Native Glossary</a>, where the first thing I
+contributed was the Bengali translation.</p>
+
+</div>
