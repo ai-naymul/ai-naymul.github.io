@@ -1,0 +1,15 @@
+<nav class="nav" aria-label="Sections">
+  <a class="nav__home" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  {%- assign pages = "about,/|publications,/publications/|experience,/experience/|writing,/writing/" | split: "|" -%}
+  {%- for p in pages -%}
+    {%- assign bits = p | split: "," -%}
+    {%- assign label = bits[0] -%}
+    {%- assign href = bits[1] -%}
+    {%- if page.url == href or (href != "/" and page.url contains href) -%}
+      <a href="{{ href | relative_url }}" aria-current="page">{{ label }}</a>
+    {%- else -%}
+      <a href="{{ href | relative_url }}">{{ label }}</a>
+    {%- endif -%}
+  {%- endfor -%}
+  <button class="themer" type="button" data-themer aria-label="Switch to dark theme" aria-pressed="false">theme</button>
+</nav>

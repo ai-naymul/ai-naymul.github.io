@@ -1,0 +1,54 @@
+{%- assign d = site.data.register -%}
+{%- assign ticks = "0,25,50,75,100" | split: "," -%}
+{%- comment -%} plot: value v maps to y = 340 - v*3 ; axes at x=180 (casual) and x=580 (formal) {%- endcomment -%}
+<figure class="figure">
+  <svg class="figure__svg" viewBox="0 0 762 396" role="img"
+       aria-labelledby="figtitle figdesc" preserveAspectRatio="xMidYMid meet">
+    <title id="figtitle">Harmful-completion rate in casual versus newspaper Bengali, across {{ d.models }} models</title>
+    <desc id="figdesc">Each line is one model. Its left end is the share of harmful requests completed when the request was written as a casual message; its right end is the same request written as newspaper Bengali. {{ d.rising }} of {{ d.models }} lines rise. The mean difference is {{ d.mean_gap }} points.</desc>
+
+    {%- for tick in ticks -%}
+      {%- assign off = tick | times: 3 -%}
+      {%- assign y = 340 | minus: off -%}
+      <line class="fig-grid" x1="180" y1="{{ y }}" x2="580" y2="{{ y }}"/>
+      <text class="fig-tick" x="168" y="{{ y | plus: 4 }}" text-anchor="end">{{ tick }}</text>
+    {%- endfor -%}
+
+    <line class="fig-axis" x1="180" y1="40" x2="180" y2="340"/>
+    <line class="fig-axis" x1="580" y1="40" x2="580" y2="340"/>
+
+    {%- for r in d.rows -%}
+      {%- assign o1 = r.casual | times: 3 -%}{%- assign y1 = 340 | minus: o1 -%}
+      {%- assign o2 = r.formal | times: 3 -%}{%- assign y2 = 340 | minus: o2 -%}
+      {%- if r.gap > 0 -%}{%- assign cls = "fig-line" -%}{%- else -%}{%- assign cls = "fig-line fig-line--down" -%}{%- endif -%}
+      <g class="{{ cls }}">
+        <title>{{ r.model }} — casual {{ r.casual }}%, newspaper {{ r.formal }}%, {{ r.gap }} points</title>
+        <line x1="180" y1="{{ y1 }}" x2="580" y2="{{ y2 }}"/>
+        <circle cx="180" cy="{{ y1 }}" r="3"/>
+        <circle cx="580" cy="{{ y2 }}" r="3"/>
+      </g>
+    {%- endfor -%}
+
+    {%- comment -%} name the three that carry the story: the widest gap, the only fall, and the safest model {%- endcomment -%}
+    {%- for r in d.rows -%}
+      {%- assign show = false -%}
+      {%- if forloop.first or forloop.last -%}{%- assign show = true -%}{%- endif -%}
+      {%- if r.model == "Claude-Haiku-4.5" -%}{%- assign show = true -%}{%- endif -%}
+      {%- if show -%}
+        {%- assign o2 = r.formal | times: 3 -%}{%- assign y2 = 340 | minus: o2 -%}
+        <text class="fig-name" x="594" y="{{ y2 | plus: 4 }}">{{ r.model }}<tspan class="fig-gap">  {% if r.gap > 0 %}+{% endif %}{{ r.gap }}</tspan></text>
+      {%- endif -%}
+    {%- endfor -%}
+
+    <text class="fig-foot" x="180" y="368" text-anchor="middle">casual message</text>
+    <text class="fig-foot" x="580" y="368" text-anchor="middle">newspaper Bengali</text>
+    <text class="fig-tick" x="168" y="30" text-anchor="end">%</text>
+  </svg>
+  <figcaption class="figure__cap">
+    Each line is one of {{ d.models }} models: the share of harmful requests it completed when the
+    request was written casually, against the <i>same</i> request written as newspaper Bengali.
+    <b>{{ d.rising }} of {{ d.models }} rise.</b> Mean {{ d.mean_gap }} points.
+    Judged by {{ d.judge }} across {{ d.responses_judged_fmt }} responses.
+    <a href="https://banglallm.github.io/banglasafe/leaderboard.html">Full leaderboard</a>
+  </figcaption>
+</figure>

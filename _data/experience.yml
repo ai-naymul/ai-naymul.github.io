@@ -1,0 +1,53 @@
+- org: "Drishtikon / Perspectivity"
+  role: "Founding member and lead engineer"
+  when: "2024 — present"
+  what: >-
+    A news-intelligence platform for Bangladesh, with an English edition. I built the
+    ingestion and event-clustering pipeline that groups coverage of the same story across
+    outlets, the link resolver it depends on, the orchestration layer around it, and the
+    Kubernetes deployment. I run the production cluster.
+
+- org: "Fellou AI (ASI X Inc.)"
+  role: "Research and development engineer"
+  when: "Aug 2025 — Jan 2026"
+  what: >-
+    Sole engineer on two prototypes for an agentic browser. The first generates interfaces:
+    the model emits a validated specification that renders as a live, interactive screen
+    rather than a chat reply. The second runs the desktop browser on a provisioned cloud
+    machine and streams it into a web page, with session lifecycle and authentication
+    fallback. Work under confidentiality; described here at the level that allows.
+
+- org: "AIMarketCap"
+  role: "Backend engineer"
+  when: "2024 — 2026"
+  what: >-
+    Built the data-collection and analytics layers, and the Kubernetes deployment the
+    platform ran on.
+
+- org: "Flannel.ai"
+  role: "Technical lead"
+  when: "2026 — present"
+  what: >-
+    A consumer product for household records — deeds, warranties, vehicle and health
+    documents — built under a SOC 2 framework.
+
+- org: "Freedoms.ai"
+  role: "Engineer"
+  when: "2024 — 2025"
+  what: >-
+    Backend and AI engineering.
+
+- org: "Menlo Park Lab"
+  role: "ML research and open-source intern"
+  when: "Feb — Jul 2024"
+  what: >-
+    Sole engineer on an autonomous coding agent built with LangChain and LangGraph. It
+    planned its own steps, wrote and tested code, and ran shell commands, closing the loop
+    without a person driving each step. The founder adopted it internally.
+
+- org: "BanglaLLM"
+  role: "Researcher"
+  when: "2024 — present"
+  what: >-
+    Open research on language models for Bangla. Three papers, a safety benchmark, and the
+    data tooling behind them.

@@ -1,0 +1,46 @@
+title: Naymul Islam
+tagline: Safety and evaluation for Bengali and other low-resource languages
+email: naymul504@gmail.com
+description: >-
+  Naymul Islam works on safety and evaluation for Bengali and other
+  low-resource languages, and builds the systems that research runs on.
+url: "https://ai-naymul.github.io"
+baseurl: ""
+lang: en
+
+github_username: ai-naymul
+scholar_url: "https://scholar.google.com/citations?user=bHLHmqYAAAAJ"
+hf_username: nymtheescobar
+
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+permalink: /writing/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - build.sh
+  - .dockerignore
+  - .jekyll-cache
+
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+

@@ -1,0 +1,40 @@
+# Titles, authors and venues verified against the ACL Anthology, 2026-11-02.
+# Author positions confirmed: first of 5, third of 5, fourth of 6.
+
+- title: "Register Shifts Break LLM Safety: A Bengali Benchmark with Culturally Grounded Harms"
+  authors: "Naymul Islam, Nusrat Jahan Lia, Shubhashis Roy Dipta, Sabik Bin Sultan, Abdullah Khan Zehady"
+  me: "Naymul Islam"
+  note: "First three authors contributed equally."
+  venue: "Findings of the Association for Computational Linguistics: EMNLP 2026"
+  year: 2026
+  finding: >-
+    The same request written as formal journalism is answered 17.5 points more often
+    than the same request written as a casual message, in 17 of 18 models tested.
+  links:
+    - { label: "Paper", url: "https://aclanthology.org/2026.findings-emnlp.1403/" }
+    - { label: "arXiv", url: "https://arxiv.org/abs/2608.22335" }
+    - { label: "Project", url: "https://banglallm.github.io/banglasafe/" }
+    - { label: "Data", url: "https://huggingface.co/datasets/BanglaLLM/banglasafe" }
+    - { label: "Leaderboard", url: "https://banglallm.github.io/banglasafe/leaderboard.html" }
+    - { label: "Code", url: "https://github.com/BanglaLLM/banglasafe" }
+    - { label: "Package", url: "https://pypi.org/project/banglasafe/" }
+
+- title: "BanglaLlama: LLaMA for Bangla Language"
+  authors: "Abdullah Khan Zehady, Shubhashis Roy Dipta, Naymul Islam, Safi Al Mamun, Santu Karmaker"
+  me: "Naymul Islam"
+  venue: "LoResLM 2026 workshop, EACL 2026"
+  year: 2026
+  finding: >-
+    Built and ran the evaluation: an eight-category test set and the inference code behind it.
+  links:
+    - { label: "Paper", url: "https://aclanthology.org/2026.loreslm-1.7/" }
+
+- title: "Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles"
+  authors: "Nusrat Jahan Lia, Shubhashis Roy Dipta, Abdullah Khan Zehady, Naymul Islam, Madhusodan Chakraborty, Abdullah Al Wasif"
+  me: "Naymul Islam"
+  venue: "BLP workshop, IJCNLP-AACL 2025"
+  year: 2025
+  finding: >-
+    Sourced the fifty political events behind the dataset and built the news crawlers.
+  links:
+    - { label: "Paper", url: "https://aclanthology.org/2025.banglalp-1.5/" }

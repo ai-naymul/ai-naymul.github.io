@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="column">
+  <h1 class="name rise">{{ page.title }}</h1>
+  <p class="small muted tabular">{{ page.date | date: "%-d %B %Y" }}</p>
+  <div class="prose rise">{{ content }}</div>
+  <p style="margin-top: var(--s5)"><a href="{{ '/writing/' | relative_url }}">All notes</a></p>
+</article>

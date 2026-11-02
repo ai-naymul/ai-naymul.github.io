@@ -1,0 +1,71 @@
+/* hallmark v2.0.0 · theme: custom (quiet-instrument, tasteskill seed 678757549) · genre editorial · job: read the work · signature: the register switch · shape: narrow column left of centre · palette: BanglaSafe cream */
+/* critique: one column, one ink, one accent; the restraint is the claim. Nothing literal past this block. */
+/* waive: imagery-floor — a researcher's page, the only picture is his own portrait */
+/* waive: motion-floor — four moves, not sixteen; this is not a marketing page */
+
+:root {
+  color-scheme: light dark;
+
+  /* colour — measured from banglallm.github.io/banglasafe */
+  --bg:       #FAF7F1;
+  --ink:      #1B1917;
+  --muted:    #776E61;
+  --faint:    #9A9183;
+  --rule:     #E6E0D6;
+  --accent:   #655D51;
+  --surface:  #F4F0E8;
+  --focus:    #1B1917;
+
+  /* type */
+  --face: Archivo, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body:  clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead:  clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head:  clamp(2.125rem, 1.2rem + 4.6vw, 5.25rem);
+  --step-title: clamp(1.75rem, 1.3rem + 1.9vw, 2.5rem);
+
+  --leading-tight: 1.05;
+  --leading-text:  1.6;
+
+  /* space — 8px scale */
+  --s1: 0.5rem;  --s2: 1rem;   --s3: 1.5rem;
+  --s4: 2.5rem;  --s5: 4rem;   --s6: 6rem;  --s7: 8.75rem;
+
+  /* measure */
+  --measure: 36rem;      /* ~576px — 62ch at body size */
+  --measure-lead: 38rem; /* ~608px — 48ch at statement size */
+  --page:    72rem;
+  --indent:  22%;        /* the column's left edge, per the direction */
+
+  /* motion */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --fast: 150ms;
+  --slow: 600ms;
+}
+
+[data-theme="dark"] {
+  --bg:      #0F1114;
+  --ink:     #E9ECEF;
+  --muted:   #98A1AB;
+  --faint:   #7C858E;
+  --rule:    #242A31;
+  --accent:  #5AA0F0;
+  --surface: #171B20;
+  --focus:   #5AA0F0;
+}
+
+/* dark without scripting: the same values, from the system preference */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --bg:      #0F1114;
+  --ink:     #E9ECEF;
+  --muted:   #98A1AB;
+  --faint:   #7C858E;
+  --rule:    #242A31;
+  --accent:  #5AA0F0;
+  --surface: #171B20;
+  --focus:   #5AA0F0;
+}
+}

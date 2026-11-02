@@ -1,0 +1,9 @@
+{%- if site.data.photos and site.data.photos.size > 0 -%}
+<div class="photo" data-photos>
+  {%- for ph in site.data.photos -%}
+  <img src="{{ ph.src | relative_url }}" alt="{{ ph.alt }}" width="300" height="300"
+       class="{% if forloop.first %}is-on{% endif %}"
+       {% unless forloop.first %}loading="lazy"{% endunless %}>
+  {%- endfor -%}
+</div>
+{%- endif -%}
