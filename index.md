@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Naymul Islam
+description: "Naymul Islam is an AI safety researcher and engineer. Research lead at BanglaLLM, founding engineer at Perspectivity, first author of a Findings of EMNLP 2026 paper."
 ---
 <div class="prose rise parts">
 

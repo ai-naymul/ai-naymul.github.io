@@ -20,6 +20,15 @@
     h: 684
     alt: "Bar chart of attack success rate in five prompting conditions. Bengali journalism is highest at 63.3 per cent, 17.5 points above Banglish peer-help at 45.8 per cent."
     cap: "The same harmful request, written five ways. Figure from the paper."
+  schema:
+    url: "https://aclanthology.org/2026.findings-emnlp.1403/"
+    sameAs: "https://arxiv.org/abs/2608.22335"
+    booktitle: "Findings of the Association for Computational Linguistics: EMNLP 2026"
+    datePublished: "2026-10"
+    doi: "10.18653/2026.findings-emnlp.1403"
+    pages: "29904-29923"
+    publisher: "Association for Computational Linguistics"
+    authors: ["Naymul Islam", "Nusrat Jahan Lia", "Shubhashis Roy Dipta", "Sabik Bin Sultan", "Abdullah Khan Zehady"]
   links:
     - { label: "Paper", url: "https://aclanthology.org/2026.findings-emnlp.1403/" }
     - { label: "arXiv", url: "https://arxiv.org/abs/2608.22335" }
@@ -39,6 +48,12 @@
     The paper releases <b>224,000 translated Bangla instruction examples</b>, Bangla-Orca (172k)
     and Bangla-Alpaca (52k), and BanglaLlama, an open family of <b>five base and instruct
     models</b> trained on them.
+  schema:
+    url: "https://aclanthology.org/2026.loreslm-1.7/"
+    booktitle: "Proceedings of the Second Workshop on Language Models for Low-Resource Languages (LoResLM 2026)"
+    datePublished: "2026-03"
+    publisher: "Association for Computational Linguistics"
+    authors: ["Abdullah Khan Zehady", "Shubhashis Roy Dipta", "Naymul Islam", "Safi Al Mamun", "Santu Karmaker"]
   links:
     - { label: "Paper", url: "https://aclanthology.org/2026.loreslm-1.7/" }
 
@@ -58,6 +73,13 @@
     h: 847
     alt: "F1 score per label across 28 models grouped by size. Government-critique reaches 0.43 to 0.79, neutral only 0.17 to 0.60, government-leaning 0.33 to 0.64."
     cap: "F1 by stance across model sizes. Neutral is the hard class. Figure from the paper."
+  schema:
+    url: "https://aclanthology.org/2025.banglalp-1.5/"
+    sameAs: "https://arxiv.org/abs/2510.03898"
+    booktitle: "Proceedings of the Second Workshop on Bangla Language Processing (BLP-2025)"
+    datePublished: "2025-12"
+    publisher: "Association for Computational Linguistics"
+    authors: ["Nusrat Jahan Lia", "Shubhashis Roy Dipta", "Abdullah Khan Zehady", "Naymul Islam", "Madhusodan Chakraborty", "Abdullah Al Wasif"]
   links:
     - { label: "Paper", url: "https://aclanthology.org/2025.banglalp-1.5/" }
     - { label: "Project", url: "https://nusrat-lia.github.io/BanglaBias/" }

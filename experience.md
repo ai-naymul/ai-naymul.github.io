@@ -3,6 +3,7 @@ layout: page
 title: Experience
 heading: Experience
 standfirst: "Where I have worked and what I built there. Newest first."
+description: "Where Naymul Islam has worked and what he built: Perspectivity, Fellou AI, AIMarketCap, Flannel.ai, Freedoms.ai, Menlo Park Lab and BanglaLLM, newest first."
 ---
 <ul class="ledger">
 {%- for e in site.data.experience %}

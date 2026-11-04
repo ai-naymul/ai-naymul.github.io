@@ -3,6 +3,7 @@ layout: page
 title: Publications
 heading: Publications
 standfirst: "Peer-reviewed work on Bengali and low-resource language models. Newest first. My name is in bold in each author list."
+description: "Peer-reviewed papers by Naymul Islam on language model safety and evaluation, including the BanglaSafe register-shift benchmark published in Findings of EMNLP 2026."
 ---
 <ul class="ledger">
 {%- for p in site.data.publications %}

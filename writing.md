@@ -3,6 +3,7 @@ layout: page
 title: Writing
 heading: Writing
 standfirst: "Notes on what I am reading, building and getting wrong. Irregular."
+description: "Notes by Naymul Islam on language model safety, evaluation and the engineering underneath, plus shorter notes on how he works."
 ---
 <div class="index rise parts">
 {%- if site.posts.size > 0 %}
