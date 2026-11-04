@@ -1,0 +1,20 @@
+{%- comment -%}
+  GoatCounter. Cookieless: it sets no cookies and no localStorage, so the site
+  needs no consent banner. 3.7 KB, loaded async after paint, so it cannot touch
+  LCP or CLS.
+
+  Snippet from goatcounter.com/help/start, with one change: the documented src
+  is protocol-relative (//gc.zgo.at). This site is HTTPS only, so it is pinned
+  to https.
+
+  Nothing renders until `goatcounter` is set in _config.yml, so the site stays
+  at 7 requests until then.
+
+  GoatCounter already ignores localhost and private networks, so the local
+  preview never counts. To stop counting your own browsing on the live site,
+  open https://ai-naymul.github.io/#toggle-goatcounter once in each browser.
+{%- endcomment -%}
+{%- if site.goatcounter and site.goatcounter != empty -%}
+<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+{%- endif -%}
